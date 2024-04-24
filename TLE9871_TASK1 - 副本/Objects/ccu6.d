@@ -1,0 +1,13 @@
+.\objects\ccu6.o: RTE\Device\TLE9871QXA20\ccu6.c
+.\objects\ccu6.o: RTE\Device\TLE9871QXA20\ccu6.h
+.\objects\ccu6.o: RTE\Device\TLE9871QXA20\tle987x.h
+.\objects\ccu6.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
+.\objects\ccu6.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ccu6.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\ccu6.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\ccu6.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\ccu6.o: RTE\Device\TLE9871QXA20\system_tle987x.h
+.\objects\ccu6.o: RTE\Device\TLE9871QXA20\types.h
+.\objects\ccu6.o: RTE\Device\TLE9871QXA20\ccu6_defines.h
+.\objects\ccu6.o: RTE\Device\TLE9871QXA20\sfr_access.h
+.\objects\ccu6.o: RTE\Device\TLE9871QXA20\tle_variants.h

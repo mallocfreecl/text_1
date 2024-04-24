@@ -1,0 +1,580 @@
+Dependencies for Project 'TLE9879QXA40_CCU6_PWM', Target 'TLE9879_EvalKit': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\app\main.c)(0x661DBA1A)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\RTE\Device\TLE9871QXA20\tle_device.h)(0x66139131)
+I (.\RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (.\RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (.\RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+I (.\RTE\Device\TLE9871QXA20\bootrom.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\scu.h)(0x60DBBAEA)
+I (.\RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\pmu.h)(0x60D96D2C)
+I (.\RTE\Device\TLE9871QXA20\adc1.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\adc1_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\adc2.h)(0x6603DF66)
+I (.\RTE\Device\TLE9871QXA20\adc2_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\bdrv.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\int.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\ccu6.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\ccu6_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\csa.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\gpt12e.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\gpt12e_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\isr.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\lin.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\port.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\timer2x.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\uart.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\uart_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\eval_board.h)(0x5FFCFDFA)
+I (.\Function\MOTOR\motor.h)(0x661C98BE)
+I (.\Function\ADC\adc.h)(0x6617F35A)
+I (.\Function\PWM_OUT\pwm_out.h)(0x66149D69)
+I (.\Function\MY_UART\my_uart.h)(0x6618F581)
+F (.\Function\MOTOR\motor.c)(0x66284D04)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\motor.o --omf_browse .\objects\motor.crf --depend .\objects\motor.d)
+I (Function\MOTOR\motor.h)(0x661C98BE)
+I (.\RTE\Device\TLE9871QXA20\tle_device.h)(0x66139131)
+I (.\RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (.\RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (.\RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+I (.\RTE\Device\TLE9871QXA20\bootrom.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\scu.h)(0x60DBBAEA)
+I (.\RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\pmu.h)(0x60D96D2C)
+I (.\RTE\Device\TLE9871QXA20\adc1.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\adc1_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\adc2.h)(0x6603DF66)
+I (.\RTE\Device\TLE9871QXA20\adc2_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\bdrv.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\int.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\ccu6.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\ccu6_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\csa.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\gpt12e.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\gpt12e_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\isr.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\lin.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\port.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\timer2x.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\uart.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\uart_defines.h)(0x661DBE12)
+F (.\Function\ADC\adc.c)(0x661C8F05)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (Function\ADC\adc.h)(0x6617F35A)
+I (.\RTE\Device\TLE9871QXA20\tle_device.h)(0x66139131)
+I (.\RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (.\RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (.\RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+I (.\RTE\Device\TLE9871QXA20\bootrom.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\scu.h)(0x60DBBAEA)
+I (.\RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\pmu.h)(0x60D96D2C)
+I (.\RTE\Device\TLE9871QXA20\adc1.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\adc1_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\adc2.h)(0x6603DF66)
+I (.\RTE\Device\TLE9871QXA20\adc2_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\bdrv.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\int.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\ccu6.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\ccu6_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\csa.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\gpt12e.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\gpt12e_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\isr.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\lin.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\port.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\timer2x.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\uart.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\uart_defines.h)(0x661DBE12)
+F (.\Function\PWM_CAPTURE\pwm_capture.c)(0x6621EA21)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\pwm_capture.o --omf_browse .\objects\pwm_capture.crf --depend .\objects\pwm_capture.d)
+I (Function\PWM_CAPTURE\pwm_capture.h)(0x6617F6D6)
+I (.\RTE\Device\TLE9871QXA20\tle_device.h)(0x66139131)
+I (.\RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (.\RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (.\RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+I (.\RTE\Device\TLE9871QXA20\bootrom.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\scu.h)(0x60DBBAEA)
+I (.\RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\pmu.h)(0x60D96D2C)
+I (.\RTE\Device\TLE9871QXA20\adc1.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\adc1_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\adc2.h)(0x6603DF66)
+I (.\RTE\Device\TLE9871QXA20\adc2_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\bdrv.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\int.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\ccu6.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\ccu6_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\csa.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\gpt12e.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\gpt12e_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\isr.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\lin.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\port.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\timer2x.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\uart.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\uart_defines.h)(0x661DBE12)
+F (.\Function\PWM_OUT\pwm_out.c)(0x661C8ED6)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\pwm_out.o --omf_browse .\objects\pwm_out.crf --depend .\objects\pwm_out.d)
+I (Function\PWM_OUT\pwm_out.h)(0x66149D69)
+I (.\RTE\Device\TLE9871QXA20\tle_device.h)(0x66139131)
+I (.\RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (.\RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (.\RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+I (.\RTE\Device\TLE9871QXA20\bootrom.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\scu.h)(0x60DBBAEA)
+I (.\RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\pmu.h)(0x60D96D2C)
+I (.\RTE\Device\TLE9871QXA20\adc1.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\adc1_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\adc2.h)(0x6603DF66)
+I (.\RTE\Device\TLE9871QXA20\adc2_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\bdrv.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\int.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\ccu6.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\ccu6_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\csa.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\gpt12e.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\gpt12e_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\isr.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\lin.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\port.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\timer2x.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\uart.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\uart_defines.h)(0x661DBE12)
+F (.\Function\MY_UART\my_uart.c)(0x6617F016)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\my_uart.o --omf_browse .\objects\my_uart.crf --depend .\objects\my_uart.d)
+I (Function\MY_UART\my_uart.h)(0x6618F581)
+I (.\RTE\Device\TLE9871QXA20\tle_device.h)(0x66139131)
+I (.\RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (.\RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (.\RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+I (.\RTE\Device\TLE9871QXA20\bootrom.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\scu.h)(0x60DBBAEA)
+I (.\RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\pmu.h)(0x60D96D2C)
+I (.\RTE\Device\TLE9871QXA20\adc1.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\adc1_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\adc2.h)(0x6603DF66)
+I (.\RTE\Device\TLE9871QXA20\adc2_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\bdrv.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\int.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\ccu6.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\ccu6_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\csa.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\gpt12e.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\gpt12e_defines.h)(0x661DBE12)
+I (.\RTE\Device\TLE9871QXA20\isr.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\lin.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\port.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\timer2x.h)(0x60DAACC8)
+I (.\RTE\Device\TLE9871QXA20\uart.h)(0x5FFCFDFA)
+I (.\RTE\Device\TLE9871QXA20\uart_defines.h)(0x661DBE12)
+I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\keil\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
+F (RTE\Device\TLE9871QXA20\ICW_TLE987x.xml)(0x60DC1F16)()
+F (RTE\Device\TLE9871QXA20\TLE987x.mig)(0x5F713422)()
+F (RTE\Device\TLE9871QXA20\TLE987x.svd)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\adc1.c)(0x65F12C2B)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\adc1.o --omf_browse .\objects\adc1.crf --depend .\objects\adc1.d)
+I (RTE\Device\TLE9871QXA20\adc1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\adc1_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\adc2.h)(0x6603DF66)
+I (RTE\Device\TLE9871QXA20\adc2_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+F (RTE\Device\TLE9871QXA20\adc1.h)(0x60DAACC8)()
+F (RTE\Device\TLE9871QXA20\adc1_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\adc2.c)(0x5FFCFDFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\adc2.o --omf_browse .\objects\adc2.crf --depend .\objects\adc2.d)
+I (RTE\Device\TLE9871QXA20\adc2.h)(0x6603DF66)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\adc2_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+F (RTE\Device\TLE9871QXA20\adc2.h)(0x6603DF66)()
+F (RTE\Device\TLE9871QXA20\adc2_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\bdrv.c)(0x60DAACC8)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\bdrv.o --omf_browse .\objects\bdrv.crf --depend .\objects\bdrv.d)
+I (RTE\Device\TLE9871QXA20\bdrv.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\scu.h)(0x60DBBAEA)
+I (RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\int.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\bdrv_defines.h)(0x661DBE12)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+F (RTE\Device\TLE9871QXA20\bdrv.h)(0x60DAACC8)()
+F (RTE\Device\TLE9871QXA20\bdrv_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\bootrom.c)(0x5FFCFDFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\bootrom.o --omf_browse .\objects\bootrom.crf --depend .\objects\bootrom.d)
+I (RTE\Device\TLE9871QXA20\bootrom.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+I (RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+F (RTE\Device\TLE9871QXA20\bootrom.h)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\bsl_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\ccu6.c)(0x65F26784)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\ccu6.o --omf_browse .\objects\ccu6.crf --depend .\objects\ccu6.d)
+I (RTE\Device\TLE9871QXA20\ccu6.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\ccu6_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+F (RTE\Device\TLE9871QXA20\ccu6.h)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\ccu6_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\config.icwp)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\csa.c)(0x5FFCFDFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\csa.o --omf_browse .\objects\csa.crf --depend .\objects\csa.d)
+I (RTE\Device\TLE9871QXA20\csa.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\adc1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\adc1_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\csa_defines.h)(0x661DBE12)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+F (RTE\Device\TLE9871QXA20\csa.h)(0x60DAACC8)()
+F (RTE\Device\TLE9871QXA20\csa_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\dma_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\eval_board.h)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\gpt12e.c)(0x5FFCFDFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\gpt12e.o --omf_browse .\objects\gpt12e.crf --depend .\objects\gpt12e.d)
+I (RTE\Device\TLE9871QXA20\gpt12e.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\gpt12e_defines.h)(0x661DBE12)
+F (RTE\Device\TLE9871QXA20\gpt12e.h)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\gpt12e_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\int.c)(0x5FFCFDFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\int.o --omf_browse .\objects\int.crf --depend .\objects\int.d)
+I (RTE\Device\TLE9871QXA20\int.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\int_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+F (RTE\Device\TLE9871QXA20\int.h)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\int_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\isr.c)(0x660BB546)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\isr.o --omf_browse .\objects\isr.crf --depend .\objects\isr.d)
+I (RTE\Device\TLE9871QXA20\tle_device.h)(0x66139131)
+I (RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+I (RTE\Device\TLE9871QXA20\bootrom.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\scu.h)(0x60DBBAEA)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\pmu.h)(0x60D96D2C)
+I (RTE\Device\TLE9871QXA20\adc1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\adc1_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\adc2.h)(0x6603DF66)
+I (RTE\Device\TLE9871QXA20\adc2_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\bdrv.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\int.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\ccu6.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\ccu6_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\csa.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\gpt12e.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\gpt12e_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\isr.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\lin.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\port.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\timer2x.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\uart.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\uart_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\int_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\isr_defines.h)(0x661DBE12)
+F (RTE\Device\TLE9871QXA20\isr.h)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\isr_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\lin.c)(0x5FFCFDFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\lin.o --omf_browse .\objects\lin.crf --depend .\objects\lin.d)
+I (RTE\Device\TLE9871QXA20\lin.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\lin_defines.h)(0x661DBE12)
+F (RTE\Device\TLE9871QXA20\lin.h)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\lin_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\mon_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\pmu.c)(0x60D96D2C)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\pmu.o --omf_browse .\objects\pmu.crf --depend .\objects\pmu.d)
+I (RTE\Device\TLE9871QXA20\pmu.h)(0x60D96D2C)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\pmu_defines.h)(0x661DBE12)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+F (RTE\Device\TLE9871QXA20\pmu.h)(0x60D96D2C)()
+F (RTE\Device\TLE9871QXA20\pmu_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\port.c)(0x60823714)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
+I (RTE\Device\TLE9871QXA20\port.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\port_defines.h)(0x661DBE12)
+F (RTE\Device\TLE9871QXA20\port.h)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\port_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\scu.c)(0x60DAACC8)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\scu.o --omf_browse .\objects\scu.crf --depend .\objects\scu.d)
+I (RTE\Device\TLE9871QXA20\scu.h)(0x60DBBAEA)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\lin.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\bootrom.h)(0x5FFCFDFA)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+I (RTE\Device\TLE9871QXA20\pmu_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+F (RTE\Device\TLE9871QXA20\scu.h)(0x60DBBAEA)()
+F (RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\ssc_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\startup_tle987x.S)(0x5FFCFDFA)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include--pd "__UVISION_VERSION SETA 533" --pd "_RTE_ SETA 1" --pd "TLE9871QXA20 SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_tle987x.lst --xref -o .\objects\startup_tle987x.o --depend .\objects\startup_tle987x.d)
+F (RTE\Device\TLE9871QXA20\system_tle987x.c)(0x60DBF932)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\system_tle987x.o --omf_browse .\objects\system_tle987x.crf --depend .\objects\system_tle987x.d)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\bsl_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\scu.h)(0x60DBBAEA)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+F (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)()
+F (RTE\Device\TLE9871QXA20\timer2x.c)(0x5FFCFDFA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\timer2x.o --omf_browse .\objects\timer2x.crf --depend .\objects\timer2x.d)
+I (RTE\Device\TLE9871QXA20\timer2x.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\timer2x_defines.h)(0x661DBE12)
+F (RTE\Device\TLE9871QXA20\timer2x.h)(0x60DAACC8)()
+F (RTE\Device\TLE9871QXA20\timer2x_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\timer3_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\tle_device.c)(0x65F122AB)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\tle_device.o --omf_browse .\objects\tle_device.crf --depend .\objects\tle_device.d)
+I (RTE\Device\TLE9871QXA20\tle_device.h)(0x66139131)
+I (RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (.\RTE\_TLE9879_EvalKit\RTE_Components.h)(0x66121E20)
+I (RTE\Device\TLE9871QXA20\bootrom.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\scu.h)(0x60DBBAEA)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\pmu.h)(0x60D96D2C)
+I (RTE\Device\TLE9871QXA20\adc1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\adc1_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\adc2.h)(0x6603DF66)
+I (RTE\Device\TLE9871QXA20\adc2_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\bdrv.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\int.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\ccu6.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\ccu6_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\csa.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\gpt12e.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\gpt12e_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\isr.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\lin.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\port.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\cmsis_misra.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\timer2x.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\uart.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\uart_defines.h)(0x661DBE12)
+F (RTE\Device\TLE9871QXA20\tle_device.h)(0x66139131)()
+F (RTE\Device\TLE9871QXA20\tle_variants.h)(0x60DAA416)()
+F (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)()
+F (RTE\Device\TLE9871QXA20\uart.c)(0x65FA7BF3)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (RTE\Device\TLE9871QXA20\uart.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (RTE\Device\TLE9871QXA20\uart_defines.h)(0x661DBE12)
+I (RTE\Device\TLE9871QXA20\sfr_access.h)(0x5FFCFDFA)
+I (RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+F (RTE\Device\TLE9871QXA20\uart.h)(0x5FFCFDFA)()
+F (RTE\Device\TLE9871QXA20\uart_defines.h)(0x661DBE12)()
+F (RTE\Device\TLE9871QXA20\wdt1.c)(0x66124F4D)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Function\MOTOR -I .\Function\ADC -I .\Function\PWM_OUT -I .\Function\MY_UART-I.\RTE\Device\TLE9871QXA20-I.\RTE\_TLE9879_EvalKit-ID:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\ARM\PACK\Infineon\TLE987x_DFP\1.5.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -DTLE9871QXA20 -D_RTE_-o .\objects\wdt1.o --omf_browse .\objects\wdt1.crf --depend .\objects\wdt1.d)
+I (RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)
+I (RTE\Device\TLE9871QXA20\types.h)(0x60DC26E4)
+I (D:\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (RTE\Device\TLE9871QXA20\tle987x.h)(0x5FFCFDFA)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (RTE\Device\TLE9871QXA20\system_tle987x.h)(0x60DBF932)
+I (RTE\Device\TLE9871QXA20\scu_defines.h)(0x661DBE12)
+F (RTE\Device\TLE9871QXA20\wdt1.h)(0x60DAACC8)()

@@ -1,0 +1,12 @@
+.\objects\lin.o: RTE\Device\TLE9871QXA20\lin.c
+.\objects\lin.o: RTE\Device\TLE9871QXA20\lin.h
+.\objects\lin.o: RTE\Device\TLE9871QXA20\tle987x.h
+.\objects\lin.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
+.\objects\lin.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lin.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\lin.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\lin.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\lin.o: RTE\Device\TLE9871QXA20\system_tle987x.h
+.\objects\lin.o: RTE\Device\TLE9871QXA20\types.h
+.\objects\lin.o: RTE\Device\TLE9871QXA20\sfr_access.h
+.\objects\lin.o: RTE\Device\TLE9871QXA20\lin_defines.h
