@@ -1,0 +1,46 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   4 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_active_c3_AppMain"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c3_AppMain"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "FalseTime"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "FalseTime"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "TrueTime"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "TrueTime"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

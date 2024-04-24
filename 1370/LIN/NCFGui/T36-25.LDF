@@ -1,0 +1,196 @@
+/*************************************************************************************/
+//                                                                                    
+// Description: LIN Description file created using Vector's DaVinci Network Designer   
+// Created:     07 Sep 2007 14:37:29
+// Author:      visbr
+// Version:     0.1                                                                   
+//                                                                          
+/*************************************************************************************/
+LIN_description_file;
+LIN_protocol_version = "2.1";
+LIN_language_version = "2.1";
+LIN_speed = 19.2 kbps; // baudrate (1.0-20.0)
+
+Nodes
+{
+  Master: VCU, 
+          5 ms, 
+		  0.1 ms ;
+  Slaves: BEWP, MEWP;
+}
+
+Signals {
+   /* Signal_name       : Size,       Init,        Publisher, Subscriber(s) */
+   BEWP_RefSpd     		:   8,        0,           VCU , BEWP;
+
+   BEWP_TargetSpd 		:	8,		  0,		   BEWP , VCU;
+   BEWP_ActSpd			:	8,		  0,		   BEWP , VCU;
+   BEWP_Voltage			:	8,		  0,		   BEWP , VCU;
+   BEWP_Temperature		:	8,		  0,		   BEWP , VCU;
+   BEWP_Current			:	8,		  0,		   BEWP , VCU;
+   BEWP_OverTempSts		:	2,		  0,		   BEWP , VCU;
+   BEWP_OverCurrentSts	:	2,		  0,		   BEWP , VCU;
+   BEWP_DryRunningSts	:	2,		  0,		   BEWP , VCU;
+   BEWP_VoltageSts		:	2,		  0,		   BEWP , VCU;
+   BEWP_BlockSts		:	2,		  0,		   BEWP , VCU;   
+   BEWP_RESP_ERROR 		:	1,		  0,		   BEWP , VCU;
+
+   MEWP_RefSpd     		:   8,        0,           VCU , MEWP;
+
+   MEWP_TargetSpd 		:	8,		  0,		   MEWP , VCU;
+   MEWP_ActSpd			:	8,		  0,		   MEWP , VCU;
+   MEWP_Voltage			:	8,		  0,		   MEWP , VCU;
+   MEWP_Temperature		:	8,		  0,		   MEWP , VCU;
+   MEWP_Current			:	8,		  0,		   MEWP , VCU;
+   MEWP_OverTempSts		:	2,		  0,		   MEWP , VCU;
+   MEWP_OverCurrentSts	:	2,		  0,		   MEWP , VCU;
+   MEWP_DryRunningSts	:	2,		  0,		   MEWP , VCU;
+   MEWP_VoltageSts		:	2,		  0,		   MEWP , VCU;
+   MEWP_BlockSts		:	2,		  0,		   MEWP , VCU;   
+   MEWP_RESP_ERROR 		:	1,		  0,		   MEWP , VCU;
+}
+
+Diagnostic_signals 
+{
+  MasterReqB0: 8, 0 ;
+  MasterReqB1: 8, 0 ;
+  MasterReqB2: 8, 0 ;
+  MasterReqB3: 8, 0 ;
+  MasterReqB4: 8, 0 ;
+  MasterReqB5: 8, 0 ;
+  MasterReqB6: 8, 0 ;
+  MasterReqB7: 8, 0 ;
+  
+  SlaveRespB0: 8, 0 ;
+  SlaveRespB1: 8, 0 ;
+  SlaveRespB2: 8, 0 ;
+  SlaveRespB3: 8, 0 ;
+  SlaveRespB4: 8, 0 ;
+  SlaveRespB5: 8, 0 ;
+  SlaveRespB6: 8, 0 ;
+  SlaveRespB7: 8, 0 ;
+}
+
+/* ----------UNCONDITIONAL FRAME DEFINITIONS---------- */
+
+Frames {
+    VCU_BEWP		:0x11, VCU					,2{
+	  BEWP_RefSpd   ,0; 
+   }
+
+    VCU_MEWP		:0x12, VCU					,2{
+	  MEWP_RefSpd    ,0; 
+   }
+   
+   BEWP_RESP		:0x1B,BEWP					,8{
+	   BEWP_TargetSpd    	 ,   0;
+	   BEWP_ActSpd		 	 ,   8;
+	   BEWP_Voltage	 		 ,  16;
+	   BEWP_Temperature    	 ,  24;
+	   BEWP_Current  		 ,  32;
+	   BEWP_OverTempSts 	 ,  46;
+	   BEWP_OverCurrentSts	 ,  48;
+	   BEWP_DryRunningSts	 ,  50;
+	   BEWP_VoltageSts		 ,  52;
+	   BEWP_BlockSts		 ,  54;
+	   BEWP_RESP_ERROR		 ,  63;
+   }
+   
+   MEWP_RESP		:0x1C,MEWP					,8{
+	   MEWP_TargetSpd    	 ,   0;
+	   MEWP_ActSpd		 	 ,   8;
+	   MEWP_Voltage	 		 ,  16;
+	   MEWP_Temperature    	 ,  24;
+	   MEWP_Current  		 ,  32;
+	   MEWP_OverTempSts 	 ,  46;
+	   MEWP_OverCurrentSts	 ,  48;
+	   MEWP_DryRunningSts	 ,  50;
+	   MEWP_VoltageSts		 ,  52;
+	   MEWP_BlockSts		 ,  54;
+	   MEWP_RESP_ERROR		 ,  63;
+   }   
+}
+
+Diagnostic_frames 
+{
+  MasterReq: 0x3C 
+  {
+    MasterReqB0, 0 ;
+    MasterReqB1, 8 ;
+    MasterReqB2, 16 ;
+    MasterReqB3, 24 ;
+    MasterReqB4, 32 ;
+    MasterReqB5, 40 ;
+    MasterReqB6, 48 ;
+    MasterReqB7, 56 ;
+  }
+  SlaveResp: 0x3D 
+  {
+    SlaveRespB0, 0 ;
+    SlaveRespB1, 8 ;
+    SlaveRespB2, 16 ;
+    SlaveRespB3, 24 ;
+    SlaveRespB4, 32 ;
+    SlaveRespB5, 40 ;
+    SlaveRespB6, 48 ;
+    SlaveRespB7, 56 ;
+  }
+}
+
+Node_attributes 
+{
+  BEWP
+  {
+    LIN_protocol = "2.1" ;
+    configured_NAD = 0x35 ;
+    initial_NAD = 0x35 ;
+    product_id = 0x124, 
+	             0x501,  
+				 0x1 ;
+    response_error = BEWP_RESP_ERROR ;
+    P2_min = 50 ms ;
+    ST_min = 0 ms ;
+    N_As_timeout = 1000 ms ;
+    N_Cr_timeout = 1000 ms ;
+    configurable_frames 
+	{
+	  VCU_BEWP;
+	  BEWP_RESP;
+    }
+  }
+  
+  MEWP
+  {
+    LIN_protocol = "2.1" ;
+    configured_NAD = 0x36 ;
+    initial_NAD = 0x36 ;
+    product_id = 0x124, 
+	             0x501,  
+				 0x1 ;
+    response_error = MEWP_RESP_ERROR ;
+    P2_min = 50 ms ;
+    ST_min = 0 ms ;
+    N_As_timeout = 1000 ms ;
+    N_Cr_timeout = 1000 ms ;
+    configurable_frames 
+	{
+	  VCU_MEWP;
+	  MEWP_RESP;
+    }
+  }
+}
+
+Schedule_tables 
+{ 
+	NormalTable 
+	{
+		VCU_BEWP     delay 10 ms ;
+		VCU_MEWP     delay 10 ms ;
+		BEWP_RESP    delay 10 ms ;
+		MEWP_RESP    delay 10 ms ;
+	}
+}
+
+
+
+

@@ -1,0 +1,742 @@
+
+
+LIN_description_file;
+LIN_protocol_version = "2.1";
+LIN_language_version = "2.1";
+LIN_speed = 19.2 kbps;
+
+Nodes {
+  Master: VCU, 5 ms, 0.1 ms ;
+  Slaves: MPV, BEWP, MEWP ;
+}
+
+Signals {
+  AC_WV1_SetPosition_Req1: 8, 0, VCU ;
+  AC_WV1_MovEnable1: 1, 0, VCU ;
+  AC_WV1_SpeedLevel_Req1: 2, 0, VCU ;
+  AC_WV1_SetPosition_Req3: 8, 0, VCU ;
+  AC_WV1_MovEnable3: 1, 0, VCU ;
+  AC_WV1_SpeedLevel_Req3: 2, 0, VCU ;
+  AC_WV2_SetPosition_Req: 3, 0, VCU ;
+  AC_WV2_MovEnable: 1, 0, VCU ;
+  AC_WV2_SpeedLevel_Req: 2, 0, VCU ;
+  HvCooltHeatrEnad: 1, 0, VCU ;
+  HvWtrHeatrPwrCnsAllwd: 8, 0, VCU ;
+  HvWtrHeatrWtrTDes: 8, 40, VCU ;
+  TargetRpmRequest1: 8, 0, VCU, BEWP ;
+  TargetRpm1: 8, 0, BEWP, VCU ;
+  ActualRpm1: 8, 0, BEWP, VCU ;
+  CurrentVoltage1: 8, 0, BEWP, VCU ;
+  CurrentTemperature1: 8, 0, BEWP, VCU ;
+  CurrentCurrent1: 8, 0, BEWP, VCU ;
+  OverTempErr1: 2, 0, BEWP, VCU ;
+  OverCurErr1: 2, 0, BEWP, VCU ;
+  DryRunErr1: 2, 0, BEWP, VCU ;
+  SupVoltErr1: 2, 0, BEWP, VCU ;
+  BlockErr1: 2, 0, BEWP, VCU ;
+  ResponseErr1: 1, 0, BEWP, VCU ;
+  TargetRpmRequest2: 8, 0, VCU, MEWP ;
+  TargetRpm2: 8, 0, MEWP, VCU ;
+  ActualRPM2: 8, 0, MEWP, VCU ;
+  CurrentVoltage2: 8, 0, MEWP, VCU ;
+  CurrentTemp2: 8, 0, MEWP, VCU ;
+  CurrentCurrent2: 8, 0, MEWP, VCU ;
+  OverTempErr2: 2, 0, MEWP, VCU ;
+  OverCurErr2: 2, 0, MEWP, VCU ;
+  DryRunErr2: 2, 0, MEWP, VCU ;
+  SupVoltErr2: 2, 0, MEWP, VCU ;
+  BlockErr2: 8, 0, MEWP, VCU ;
+  ResponseErr2: 1, 0, MEWP, VCU ;
+  MPV_1_MoveEnable: 1, 0, VCU, MPV ;
+  VCU_MPV_01_ReqMovePos: 8, 8, VCU, MPV ;
+  Comm_Err: 1, 0, MPV, VCU ;
+  Fault_signal: 4, 0, MPV, VCU ;
+  voltageErr: 2, 0, MPV, VCU ;
+  TempWarn: 1, 0, MPV, VCU ;
+  MotorStatus: 1, 0, MPV, VCU ;
+  RespPos: 8, 0, MPV, VCU ;
+}
+
+Diagnostic_signals {
+  MasterReqB0: 8, 0 ;
+  MasterReqB1: 8, 0 ;
+  MasterReqB2: 8, 0 ;
+  MasterReqB3: 8, 0 ;
+  MasterReqB4: 8, 0 ;
+  MasterReqB5: 8, 0 ;
+  MasterReqB6: 8, 0 ;
+  MasterReqB7: 8, 0 ;
+  SlaveRespB0: 8, 0 ;
+  SlaveRespB1: 8, 0 ;
+  SlaveRespB2: 8, 0 ;
+  SlaveRespB3: 8, 0 ;
+  SlaveRespB4: 8, 0 ;
+  SlaveRespB5: 8, 0 ;
+  SlaveRespB6: 8, 0 ;
+  SlaveRespB7: 8, 0 ;
+}
+
+
+
+Frames {
+  VCU_BEWP_01: 17, VCU, 2 {
+    TargetRpmRequest1, 0 ;
+  }
+  BEWP_VCU_01: 27, BEWP, 8 {
+    TargetRpm1, 0 ;
+    ActualRpm1, 8 ;
+    CurrentVoltage1, 16 ;
+    CurrentTemperature1, 24 ;
+    CurrentCurrent1, 32 ;
+    OverTempErr1, 46 ;
+    OverCurErr1, 48 ;
+    DryRunErr1, 50 ;
+    SupVoltErr1, 52 ;
+    BlockErr1, 54 ;
+    ResponseErr1, 63 ;
+  }
+  VCU_MEWP_01: 18, VCU, 2 {
+    TargetRpmRequest2, 0 ;
+  }
+  MEWP_VCU_01: 28, MEWP, 8 {
+    TargetRpm2, 0 ;
+    ActualRPM2, 8 ;
+    CurrentVoltage2, 16 ;
+    CurrentTemp2, 24 ;
+    CurrentCurrent2, 32 ;
+    OverTempErr2, 46 ;
+    OverCurErr2, 48 ;
+    DryRunErr2, 50 ;
+    SupVoltErr2, 52 ;
+    BlockErr2, 54 ;
+    ResponseErr2, 63 ;
+  }
+  VCU_MPV_01: 16, VCU, 8 {
+    MPV_1_MoveEnable, 0 ;
+    VCU_MPV_01_ReqMovePos, 8 ;
+  }
+  MPV_VCU_01: 26, MPV, 8 {
+    Comm_Err, 0 ;
+    Fault_signal, 2 ;
+    voltageErr, 12 ;
+    TempWarn, 14 ;
+    MotorStatus, 15 ;
+    RespPos, 16 ;
+  }
+}
+
+
+
+Diagnostic_frames {
+  MasterReq: 0x3c {
+    MasterReqB0, 0 ;
+    MasterReqB1, 8 ;
+    MasterReqB2, 16 ;
+    MasterReqB3, 24 ;
+    MasterReqB4, 32 ;
+    MasterReqB5, 40 ;
+    MasterReqB6, 48 ;
+    MasterReqB7, 56 ;
+  }
+  SlaveResp: 0x3d {
+    SlaveRespB0, 0 ;
+    SlaveRespB1, 8 ;
+    SlaveRespB2, 16 ;
+    SlaveRespB3, 24 ;
+    SlaveRespB4, 32 ;
+    SlaveRespB5, 40 ;
+    SlaveRespB6, 48 ;
+    SlaveRespB7, 56 ;
+  }
+}
+
+Node_attributes {
+  MPV{
+    LIN_protocol = "2.1" ;
+    configured_NAD = 0x34 ;
+    initial_NAD = 0x34 ;
+    product_id = 0x124, 0xFFFE, 0 ;
+    response_error = Comm_Err ;
+    P2_min = 50 ms ;
+    ST_min = 0 ms ;
+    N_As_timeout = 1000 ms ;
+    N_Cr_timeout = 1000 ms ;
+    configurable_frames {
+      VCU_MPV_01 ;
+      MPV_VCU_01 ;
+    }
+  }
+  BEWP{
+    LIN_protocol = "2.1" ;
+    configured_NAD = 0x35 ;
+    initial_NAD = 0x35 ;
+    product_id = 0x124, 0x501, 1 ;
+    response_error = ResponseErr1 ;
+    P2_min = 50 ms ;
+    ST_min = 0 ms ;
+    N_As_timeout = 1000 ms ;
+    N_Cr_timeout = 1000 ms ;
+    configurable_frames {
+      VCU_BEWP_01 ;
+      BEWP_VCU_01 ;
+    }
+  }
+  MEWP{
+    LIN_protocol = "2.1" ;
+    configured_NAD = 0x36 ;
+    initial_NAD = 0x36 ;
+    product_id = 0x124, 0x501, 1 ;
+    response_error = ResponseErr2 ;
+    P2_min = 50 ms ;
+    ST_min = 0 ms ;
+    N_As_timeout = 1000 ms ;
+    N_Cr_timeout = 1000 ms ;
+    configurable_frames {
+      VCU_MEWP_01 ;
+      MEWP_VCU_01 ;
+    }
+  }
+}
+
+Schedule_tables {
+ NormalTable {
+  }
+ DiagReqOnly {
+    MasterReq delay 10 ms ;
+  }
+ DiagRespOnly {
+    SlaveResp delay 10 ms ;
+  }
+ DiagReqInterleaved {
+    MasterReq delay 10 ms ;
+  }
+ DiagRespInterleaved {
+    SlaveResp delay 10 ms ;
+  }
+ ForceTable {
+    VCU_MPV_01 delay 10 ms ;
+    MPV_VCU_01 delay 10 ms ;
+    VCU_BEWP_01 delay 10 ms ;
+    BEWP_VCU_01 delay 10 ms ;
+    VCU_MEWP_01 delay 10 ms ;
+    MEWP_VCU_01 delay 10 ms ;
+  }
+}
+
+
+Signal_encoding_types {
+  AC_WV1_SetPosition_Req1_Encoding {
+    physical_value, 0, 100, 1, 0, "%" ;
+    physical_value, 101, 255, 1, 0, "Reserved" ;
+  }
+  AC_WV1_SetPosition_Req3_Encoding {
+    physical_value, 0, 100, 1, 0, "%" ;
+    physical_value, 101, 255, 1, 0, "Reserved" ;
+  }
+  AC_WV1_SpeedLevel_Req1_Encoding_1 {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Invalid" ;
+    logical_value, 1, "Level 1" ;
+    logical_value, 2, "Level 2" ;
+    logical_value, 3, "Reserved" ;
+  }
+  AC_WV1_SpeedLevel_Req3_Encoding_1 {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Invalid" ;
+    logical_value, 1, "Level 1" ;
+    logical_value, 2, "Level 2" ;
+    logical_value, 3, "Reserved" ;
+  }
+  AC_WV2_MovEnable_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "Move Disable" ;
+    logical_value, 1, "Move Enable" ;
+  }
+  AC_WV2_SetPosition_Req_Encoding {
+    physical_value, 0, 7, 1, 0 ;
+    logical_value, 0, "Move to Position V1ToV2 V3ToV4" ;
+    logical_value, 1, "Move to Position V1ToV4 V3ToV2" ;
+    logical_value, 2, "Reserved" ;
+    logical_value, 3, "Reserved" ;
+    logical_value, 4, "Reserved" ;
+    logical_value, 5, "Reserved" ;
+    logical_value, 6, "Reserved" ;
+    logical_value, 7, "Reserved" ;
+  }
+  AC_WV2_SpeedLevel_Req_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Invalid" ;
+    logical_value, 1, "Level 1" ;
+    logical_value, 2, "Level 2" ;
+    logical_value, 3, "Reserved" ;
+  }
+  ActualRPM2_Encoding {
+    physical_value, 0, 254, 0.4, 0, "%" ;
+    logical_value, 255, "Invalid" ;
+  }
+  ActualRpm1_Encoding {
+    physical_value, 0, 254, 0.4, 0, "%" ;
+    logical_value, 255, "Invalid" ;
+  }
+  Boolean {
+    logical_value, 0, "FALSE" ;
+    logical_value, 1, "Boolean_TRUE" ;
+  }
+  CooltT {
+    physical_value, 0, 255, 1, -40, "degC" ;
+  }
+  CurrentCurrent1_Encoding {
+    physical_value, 0, 254, 0.1, 0, "A" ;
+    logical_value, 255, "Invalid" ;
+  }
+  CurrentCurrent2_Encoding {
+    physical_value, 0, 254, 0.1, 0 ;
+    logical_value, 255, "Invalid" ;
+  }
+  CurrentTemp2_Encoding {
+    physical_value, 0, 254, 1, -50, "?" ;
+    logical_value, 255, "Invalid" ;
+  }
+  CurrentTemperature1_Encoding {
+    physical_value, 0, 254, 1, -50, "?" ;
+    logical_value, 255, "Invalid" ;
+  }
+  CurrentVoltage1_Encoding {
+    physical_value, 0, 254, 0.1, 0, "V" ;
+    logical_value, 255, "Invalid" ;
+  }
+  CurrentVoltage2_Encoding {
+    physical_value, 0, 254, 0.1, 0, "V" ;
+    logical_value, 255, "Invalid" ;
+  }
+  ErrRespHVCH_Encoding {
+    logical_value, 0, "no error" ;
+    logical_value, 1, "error" ;
+  }
+  HvCooltHeatrEnad_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "False" ;
+    logical_value, 1, "True" ;
+  }
+  HvCooltHeatrICns {
+    physical_value, 0, 255, 0.25, 0, "A" ;
+  }
+  HvCooltHeatrSplyUForCtrlUnitVal {
+    physical_value, 0, 255, 0.1, 0, "V" ;
+  }
+  HvCooltHeatrSrvRqrdCircForDrvrShoOrOpen_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "False" ;
+    logical_value, 1, "True" ;
+  }
+  HvCooltHeatrSrvRqrdICnsOutOfRng_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "False" ;
+    logical_value, 1, "True" ;
+  }
+  HvCooltHeatrSrvRqrdMemErr_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "False" ;
+    logical_value, 1, "True" ;
+  }
+  HvCooltHeatrSrvRqrdSrvRqrd_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "False" ;
+    logical_value, 1, "True" ;
+  }
+  HvCooltHeatrSts {
+    logical_value, 0, "HvCooltHeatrSts_Off" ;
+    logical_value, 1, "HvCooltHeatrSts_LockedUntilNextStart" ;
+    logical_value, 2, "HvCooltHeatrSts_LockedUntilService" ;
+    logical_value, 3, "HvCooltHeatrSts_LockedPermanent" ;
+    logical_value, 4, "HvCooltHeatrSts_Operation" ;
+    logical_value, 5, "HvCooltHeatrSts_Reserved1" ;
+    logical_value, 6, "HvCooltHeatrSts_Reserved2" ;
+    logical_value, 7, "HvCooltHeatrSts_Reserved3" ;
+  }
+  HvHeatrPwrLim {
+    physical_value, 0, 255, 40, 0 ;
+  }
+  MPV_01_Comm_Err_Encoding {
+    logical_value, 0, "No Error" ;
+    logical_value, 1, "LIN Communication Error" ;
+  }
+  MPV_01_Fault_signal_Encoding {
+    logical_value, 0, "No Fault" ;
+    logical_value, 1, "Coil_Open Detected" ;
+    logical_value, 2, "Stail Detected" ;
+    logical_value, 3, "Over Temp Shutdown" ;
+    logical_value, 4, "Coil Short Detected" ;
+    logical_value, 5, "Reserved" ;
+    logical_value, 6, "Reserved" ;
+    logical_value, 7, "Reserved" ;
+    logical_value, 8, "Reserved" ;
+    logical_value, 9, "Reserved" ;
+    logical_value, 10, "Reserved" ;
+    logical_value, 11, "Reserved" ;
+    logical_value, 12, "Reserved" ;
+    logical_value, 13, "Reserved" ;
+    logical_value, 14, "Reserved" ;
+    logical_value, 15, "Reserved" ;
+  }
+  MPV_1_MoveEnable_Encoding {
+    logical_value, 0, "No Req" ;
+    logical_value, 1, "ReqMotorMove" ;
+  }
+  MotorStatus_Encoding {
+    logical_value, 0, "Motor Stop" ;
+    logical_value, 1, "Motor Running" ;
+  }
+  OverErr_Encoding {
+    logical_value, 0, "No Error" ;
+    logical_value, 1, "Error" ;
+    logical_value, 2, "SNA" ;
+    logical_value, 3, "Invalid" ;
+  }
+  Pwr3 {
+    physical_value, 0, 1023, 20, 0, "W" ;
+  }
+  RespPos_Encoding {
+    physical_value, 0, 255, 0.392, 0, "%" ;
+  }
+  ResponseErr1_Encoding {
+    logical_value, 0, "No Error" ;
+    logical_value, 1, "Error" ;
+  }
+  ResponseErr2_Encoding {
+    logical_value, 0, "No Error" ;
+    logical_value, 1, "Error" ;
+  }
+  TargetRpm2_Encoding {
+    physical_value, 0, 254, 0.4, 0, "%" ;
+    logical_value, 255, "Invalid" ;
+  }
+  TargetRpmRequest_Encoding {
+    physical_value, 0, 254, 0.4, 0, "%" ;
+    logical_value, 255, "Invalid" ;
+  }
+  TargetRpm_Encoding {
+    physical_value, 0, 254, 0.4, 0, "%" ;
+    logical_value, 255, "Invalid" ;
+  }
+  TempWarn_Encoding {
+    logical_value, 0, "No Error" ;
+    logical_value, 1, "Temp Warn" ;
+  }
+  VCU_MEWP_01_NewSignal_Encoding {
+    physical_value, 0, 254, 0.4, 0, "%" ;
+    logical_value, 255, "Invalid" ;
+  }
+  VCU_MPV_01_NewSignal_Encoding {
+    physical_value, 0, 255, 0.392, 0, "%" ;
+  }
+  VCU_TPVC_21_NewSignal_Encoding_1 {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "Move Disable" ;
+    logical_value, 1, "Move Enable" ;
+  }
+  VCU_TPVR_25_NewSignal_Encoding_1 {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "Move Disable" ;
+    logical_value, 1, "Move Enable" ;
+  }
+  WV1_AC_FaultState1_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "No error" ;
+    logical_value, 1, "LIN comm error detected" ;
+  }
+  WV1_AC_FaultState1_Encoding_1 {
+    physical_value, 0, 7, 1, 0 ;
+    logical_value, 0, "No fault" ;
+    logical_value, 1, "Motor coil short" ;
+    logical_value, 2, "Motor coil open" ;
+    logical_value, 3, "Over temperature shutdown" ;
+    logical_value, 4, "Fault State Indeterminate" ;
+    logical_value, 5, "Block" ;
+    logical_value, 6, "Reserved" ;
+    logical_value, 7, "Reserved" ;
+  }
+  WV1_AC_FaultState3_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "No error" ;
+    logical_value, 1, "LIN comm error detected" ;
+  }
+  WV1_AC_FaultState3_Encoding_1 {
+    physical_value, 0, 7, 1, 0 ;
+    logical_value, 0, "No fault" ;
+    logical_value, 1, "Motor coil short" ;
+    logical_value, 2, "Motor coil open" ;
+    logical_value, 3, "Over temperature shutdown" ;
+    logical_value, 4, "Fault State Indeterminate" ;
+    logical_value, 5, "Block" ;
+    logical_value, 6, "Reserved" ;
+    logical_value, 7, "Reserved" ;
+  }
+  WV1_AC_Position1_Encoding {
+    physical_value, 0, 100, 1, 0, "%" ;
+    physical_value, 101, 254, 1, 0, "Reserved" ;
+    logical_value, 255, "Unknow Position" ;
+  }
+  WV1_AC_Position3_Encoding {
+    physical_value, 0, 100, 1, 0, "%" ;
+    physical_value, 101, 254, 1, 0, "Reserved" ;
+    logical_value, 255, "Unknow Position" ;
+  }
+  WV1_AC_RunState1_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "Not Moving" ;
+    logical_value, 1, "Moving" ;
+  }
+  WV1_AC_RunState3_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "Not Moving" ;
+    logical_value, 1, "Moving" ;
+  }
+  WV1_AC_SpeedLevel1_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Invalid" ;
+    logical_value, 1, "Level1" ;
+    logical_value, 2, "Level2" ;
+    logical_value, 3, "Reserved" ;
+  }
+  WV1_AC_SpeedLevel3_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Invalid" ;
+    logical_value, 1, "Level1" ;
+    logical_value, 2, "Level2" ;
+    logical_value, 3, "Reserved" ;
+  }
+  WV1_AC_TemperatueState1_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Temperaure OK" ;
+    logical_value, 1, "Over temperature warning" ;
+    logical_value, 2, "Reserved" ;
+    logical_value, 3, "Reserved" ;
+  }
+  WV1_AC_TemperatueState3_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Temperaure OK" ;
+    logical_value, 1, "Over temperature warning" ;
+    logical_value, 2, "Reserved" ;
+    logical_value, 3, "Reserved" ;
+  }
+  WV1_AC_VoltageState1_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Voltage OK" ;
+    logical_value, 1, "Over Voltage" ;
+    logical_value, 2, "Under Voltage" ;
+    logical_value, 3, "Reserved" ;
+  }
+  WV1_AC_VoltageState3_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Voltage OK" ;
+    logical_value, 1, "Over Voltage" ;
+    logical_value, 2, "Under Voltage" ;
+    logical_value, 3, "Reserved" ;
+  }
+  WV2_AC_CommError_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "No error" ;
+    logical_value, 1, "LIN comm error detected" ;
+  }
+  WV2_AC_FaultState_Encoding {
+    physical_value, 0, 7, 1, 0 ;
+    logical_value, 0, "No fault" ;
+    logical_value, 1, "Motor coil short" ;
+    logical_value, 2, "Motor coil open" ;
+    logical_value, 3, "Over temperature shutdown" ;
+    logical_value, 4, "Fault State Indeterminate" ;
+    logical_value, 5, "Block" ;
+    logical_value, 6, "Reserved" ;
+    logical_value, 7, "Reserved" ;
+  }
+  WV2_AC_Position_Encoding {
+    physical_value, 0, 15, 1, 0 ;
+    logical_value, 0, "Position V1ToV2 V3ToV4" ;
+    logical_value, 1, "Position V1ToV4 V3ToV2" ;
+    logical_value, 2, "Unkown Position" ;
+    logical_value, 3, "Reserved" ;
+    logical_value, 4, "Reserved" ;
+    logical_value, 5, "Reserved" ;
+    logical_value, 6, "Reserved" ;
+    logical_value, 7, "Reserved" ;
+    logical_value, 8, "Reserved" ;
+    logical_value, 9, "Reserved" ;
+    logical_value, 10, "Reserved" ;
+    logical_value, 11, "Reserved" ;
+    logical_value, 12, "Reserved" ;
+    logical_value, 13, "Reserved" ;
+    logical_value, 14, "Reserved" ;
+    logical_value, 15, "Reserved" ;
+  }
+  WV2_AC_RunState_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "Not Moving" ;
+    logical_value, 1, "Moving" ;
+  }
+  WV2_AC_SpeedLevel_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Invalid" ;
+    logical_value, 1, "Level 1" ;
+    logical_value, 2, "Level 2" ;
+    logical_value, 3, "Reserved" ;
+  }
+  WV2_AC_TemperatueState_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Temperaure OK" ;
+    logical_value, 1, "Over temperature warning" ;
+    logical_value, 2, "Reserved" ;
+    logical_value, 3, "Reserved" ;
+  }
+  WV2_AC_VoltageState_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Voltage OK" ;
+    logical_value, 1, "Over Voltage" ;
+    logical_value, 2, "Under Voltage" ;
+    logical_value, 3, "Reserved" ;
+  }
+  voltageErr_Encoding {
+    logical_value, 0, "No Error" ;
+    logical_value, 1, "overvoltage" ;
+    logical_value, 2, "lackvoltage" ;
+    logical_value, 3, "Reserved" ;
+  }
+  AC_WV1_SpeedLevel_Req1_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Invalid" ;
+    logical_value, 1, "Level 1" ;
+    logical_value, 2, "Level 2" ;
+    logical_value, 3, "Reserved" ;
+  }
+  AC_WV1_SpeedLevel_Req3_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Invalid" ;
+    logical_value, 1, "Level 1" ;
+    logical_value, 2, "Level 2" ;
+    logical_value, 3, "Reserved" ;
+  }
+  VCU_3PasVlv1_21_NewSignal_1_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "Move Disable" ;
+    logical_value, 1, "Move Enable" ;
+  }
+  VCU_3PasVlv2_23_NewSignal_1_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "Move Disable" ;
+    logical_value, 1, "Move Enable" ;
+  }
+  VCU_3PasVlv3_25_NewSignal_1_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "Move Disable" ;
+    logical_value, 1, "Move Enable" ;
+  }
+  VCU_TPVW_23_NewSignal_Encoding_1 {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "Move Disable" ;
+    logical_value, 1, "Move Enable" ;
+  }
+  WV1_AC_FaultState2_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "No error" ;
+    logical_value, 1, "LIN comm error detected" ;
+  }
+  WV1_AC_FaultState2_Encoding_1 {
+    physical_value, 0, 7, 1, 0 ;
+    logical_value, 0, "No fault" ;
+    logical_value, 1, "Motor coil short" ;
+    logical_value, 2, "Motor coil open" ;
+    logical_value, 3, "Over temperature shutdown" ;
+    logical_value, 4, "Fault State Indeterminate" ;
+    logical_value, 5, "Reserved" ;
+    logical_value, 6, "Reserved" ;
+    logical_value, 7, "Reserved" ;
+  }
+  WV1_AC_RunState2_Encoding {
+    physical_value, 0, 1, 1, 0 ;
+    logical_value, 0, "Not Moving" ;
+    logical_value, 1, "Moving" ;
+  }
+  WV1_AC_SpeedLevel2_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Invalid" ;
+    logical_value, 1, "Level1" ;
+    logical_value, 2, "Level2" ;
+    logical_value, 3, "Reserved" ;
+  }
+  WV1_AC_TemperatueState2_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Temperaure OK" ;
+    logical_value, 1, "Over temperature warning" ;
+    logical_value, 2, "Reserved" ;
+    logical_value, 3, "Reserved" ;
+  }
+  WV1_AC_VoltageState2_Encoding {
+    physical_value, 0, 3, 1, 0 ;
+    logical_value, 0, "Voltage OK" ;
+    logical_value, 1, "Over Voltage" ;
+    logical_value, 2, "Under Voltage" ;
+    logical_value, 3, "Reserved" ;
+  }
+  AC_WV1_SetPosition_Req1_Encoding_1 {
+    physical_value, 101, 255, 1, 0, "Reserved" ;
+  }
+  VCU_3PasVlv1_21_NewSignal_Encoding {
+    physical_value, 0, 255, 1, 0 ;
+  }
+  VCU_3PasVlv2_23_NewSignal_Encoding {
+    physical_value, 0, 255, 1, 0 ;
+  }
+  VCU_3PasVlv3_25_NewSignal_Encoding {
+    physical_value, 0, 255, 1, 0 ;
+  }
+  VCU_TPVC_21_NewSignal_Encoding {
+    physical_value, 0, 255, 1, 0 ;
+  }
+  VCU_TPVR_25_NewSignal_Encoding {
+    physical_value, 0, 255, 1, 0 ;
+  }
+  VCU_TPVW_23_NewSignal_Encoding {
+    physical_value, 0, 255, 1, 0 ;
+  }
+  WV1_AC_Position2_Encoding {
+    physical_value, 0, 255, 1, 0, "%" ;
+  }
+}
+
+Signal_representation {
+  AC_WV1_SetPosition_Req1_Encoding: AC_WV1_SetPosition_Req1 ;
+  AC_WV1_SetPosition_Req3_Encoding: AC_WV1_SetPosition_Req3 ;
+  AC_WV1_SpeedLevel_Req1_Encoding_1: AC_WV1_SpeedLevel_Req1 ;
+  AC_WV1_SpeedLevel_Req3_Encoding_1: AC_WV1_SpeedLevel_Req3 ;
+  AC_WV2_MovEnable_Encoding: AC_WV2_MovEnable ;
+  AC_WV2_SetPosition_Req_Encoding: AC_WV2_SetPosition_Req ;
+  AC_WV2_SpeedLevel_Req_Encoding: AC_WV2_SpeedLevel_Req ;
+  ActualRPM2_Encoding: ActualRPM2 ;
+  ActualRpm1_Encoding: ActualRpm1 ;
+  CooltT: HvWtrHeatrWtrTDes ;
+  CurrentCurrent1_Encoding: CurrentCurrent1 ;
+  CurrentCurrent2_Encoding: CurrentCurrent2 ;
+  CurrentTemp2_Encoding: CurrentTemp2 ;
+  CurrentTemperature1_Encoding: CurrentTemperature1 ;
+  CurrentVoltage1_Encoding: CurrentVoltage1 ;
+  CurrentVoltage2_Encoding: CurrentVoltage2 ;
+  HvCooltHeatrEnad_Encoding: HvCooltHeatrEnad ;
+  HvHeatrPwrLim: HvWtrHeatrPwrCnsAllwd ;
+  MPV_01_Comm_Err_Encoding: Comm_Err ;
+  MPV_01_Fault_signal_Encoding: Fault_signal ;
+  MPV_1_MoveEnable_Encoding: MPV_1_MoveEnable ;
+  MotorStatus_Encoding: MotorStatus ;
+  OverErr_Encoding: OverTempErr1, OverCurErr1, DryRunErr1, SupVoltErr1, BlockErr1, OverTempErr2, OverCurErr2, DryRunErr2, SupVoltErr2, BlockErr2 ;
+  RespPos_Encoding: RespPos ;
+  ResponseErr1_Encoding: ResponseErr1 ;
+  ResponseErr2_Encoding: ResponseErr2 ;
+  TargetRpm2_Encoding: TargetRpm2 ;
+  TargetRpmRequest_Encoding: TargetRpmRequest1 ;
+  TargetRpm_Encoding: TargetRpm1 ;
+  TempWarn_Encoding: TempWarn ;
+  VCU_MEWP_01_NewSignal_Encoding: TargetRpmRequest2 ;
+  VCU_MPV_01_NewSignal_Encoding: VCU_MPV_01_ReqMovePos ;
+  VCU_TPVC_21_NewSignal_Encoding_1: AC_WV1_MovEnable1 ;
+  VCU_TPVR_25_NewSignal_Encoding_1: AC_WV1_MovEnable3 ;
+  voltageErr_Encoding: voltageErr ;
+}

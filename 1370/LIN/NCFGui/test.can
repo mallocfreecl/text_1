@@ -1,0 +1,67 @@
+/*@!Encoding:936*/
+includes
+{
+  
+}
+
+variables
+{
+  dword ErrChkId = 0;
+}
+
+on start
+{
+  //ErrChkId=ChkStart_ErrorFramesOccured(0, 2, 0);
+
+}
+
+on linSlaveTimeout
+{
+    float t;
+  write("%x",ErrChkId);
+  t=timeNow()/100000.0;
+  write("Error Time:%.6f s,Error Reson:SlaveTimeout",t);
+}
+
+on linTransmError
+{
+    float t;
+  
+  t=timeNow()/100000.0;
+  write("Error Time:%.6f s,Error Reson:TransmError",t);  
+}
+
+on linCsError
+{
+      float t;
+
+  t=timeNow()/100000.0;
+  write("Error Time:%.6f s,Error Reson:CsError",t); 
+}
+
+on linReceiveError
+{
+      float t;
+
+  t=timeNow()/100000.0;
+  write("Error Time:%.6f s,Error Reson:ReceiveError",t);   
+}
+
+on linSyncError
+{
+        float t;
+
+  t=timeNow()/100000.0;
+  write("Error Time:%.6f s,Error Reson:SyncError",t);  
+}
+
+void Callback_errorFrameOccured(dword chk_id)
+{
+  float t;
+  write("%x",ErrChkId);
+  t=timeNow()/100000.0;
+  write("%.6f s",t);
+  //testStep("ErrorFrameTimeStamp","%.6f s",t);//打印该事件戳
+  //TestSupplyTextEvent("ErrorFrameOccured");//供应Text事件
+}
+

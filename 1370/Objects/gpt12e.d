@@ -1,0 +1,12 @@
+.\objects\gpt12e.o: RTE\Device\TLE9873QXW40\gpt12e.c
+.\objects\gpt12e.o: RTE\Device\TLE9873QXW40\gpt12e.h
+.\objects\gpt12e.o: RTE\Device\TLE9873QXW40\tle987x.h
+.\objects\gpt12e.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
+.\objects\gpt12e.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gpt12e.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\gpt12e.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\gpt12e.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\gpt12e.o: RTE\Device\TLE9873QXW40\system_tle987x.h
+.\objects\gpt12e.o: RTE\Device\TLE9873QXW40\types.h
+.\objects\gpt12e.o: RTE\Device\TLE9873QXW40\sfr_access.h
+.\objects\gpt12e.o: RTE\Device\TLE9873QXW40\gpt12e_defines.h

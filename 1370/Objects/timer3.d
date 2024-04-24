@@ -1,0 +1,17 @@
+.\objects\timer3.o: RTE\Device\TLE9873QXW40\timer3.c
+.\objects\timer3.o: RTE\Device\TLE9873QXW40\timer3.h
+.\objects\timer3.o: RTE\Device\TLE9873QXW40\tle987x.h
+.\objects\timer3.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
+.\objects\timer3.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\timer3.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\timer3.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\timer3.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\timer3.o: RTE\Device\TLE9873QXW40\system_tle987x.h
+.\objects\timer3.o: RTE\Device\TLE9873QXW40\types.h
+.\objects\timer3.o: RTE\Device\TLE9873QXW40\sfr_access.h
+.\objects\timer3.o: RTE\Device\TLE9873QXW40\scu.h
+.\objects\timer3.o: RTE\Device\TLE9873QXW40\scu_defines.h
+.\objects\timer3.o: RTE\Device\TLE9873QXW40\cmsis_misra.h
+.\objects\timer3.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
+.\objects\timer3.o: RTE\Device\TLE9873QXW40\timer3_defines.h
+.\objects\timer3.o: .\RTE\_TLE9879_EvalKit\RTE_Components.h

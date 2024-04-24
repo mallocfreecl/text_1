@@ -1,0 +1,33 @@
+/* *************************************************************************/
+/* Initiator: PHAM VIET HUNG */
+/* This example is used for S12XEP100 - Multi-Master with One Slave */
+/* *************************************************************************/
+
+/*** GENERAL DEFINITION ***/
+LIN_node_config_file;
+
+/*** MCU DEFINITION ***/
+mcu  {         /* Must check the correct MCU name */
+	mcu_name = MC9S12VR64;	
+	bus_clock = 20000000;		/* Frequency bus of system Hz*/
+	xgate_support = no;		/* Support XGATE Co-Processor */
+}
+
+/*** LIN HARDWARE DEFINITION ***/
+/* Sci config */
+sci {
+	s12_sci0{
+		sci_channel                = 0;
+	}
+}
+
+/*** NETWORK DEFINITION ***/
+network {
+	idle_timeout                  = 4 s;
+	diagnostic_class              = 1;
+	LI0{
+		node =BEWP;		        /* Name of node described in LDF (must check consistence with LDF) */
+		file = "T36-25.ldf"; 	/* Path to LDF file */
+		device = s12_sci0;          	/* Identifier to LIN Hardware, related to LIN HARDWARE DEFINITION */
+    }
+}
