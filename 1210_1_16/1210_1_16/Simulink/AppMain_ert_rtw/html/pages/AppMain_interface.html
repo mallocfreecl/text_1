@@ -1,0 +1,814 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+AppMain 的代码接口报告
+</title>
+
+</head>
+<body>
+<h1>
+AppMain 的代码接口报告
+</h1>
+<h3>
+目录
+</h3>
+<ul>
+<li>
+<a href="#sec_入口函数">
+入口函数
+</a>
+
+</li>
+<li>
+<a href="#sec_输入端口">
+输入端口
+</a>
+
+</li>
+<li>
+<a href="#sec_输出端口">
+输出端口
+</a>
+
+</li>
+<li>
+<a href="#sec_接口参数">
+接口参数
+</a>
+
+</li>
+<li>
+<a href="#sec_数据存储">
+数据存储
+</a>
+
+</li>
+
+</ul>
+<h3>
+<a name="sec_入口函数">
+入口函数
+</a>
+
+</h3>
+<p>
+函数: <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'AppMain_initialize'})">AppMain_initialize</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+原型
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void AppMain_initialize(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+描述
+</td>
+<td width="75%" align="left" valign="top">
+生成代码的初始化入口函数
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+定时
+</td>
+<td width="75%" align="left" valign="top">
+只能调用一次
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+参数
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+返回值
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+头文件
+</td>
+<td width="75%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'AppMain.h'})">AppMain.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+函数: <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'AppMain_step'})">AppMain_step</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+原型
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void AppMain_step(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+描述
+</td>
+<td width="75%" align="left" valign="top">
+生成代码的输出入口函数
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+定时
+</td>
+<td width="75%" align="left" valign="top">
+必须周期性调用，每 0.01 秒调用一次
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+参数
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+返回值
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+头文件
+</td>
+<td width="75%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'AppMain.h'})">AppMain.h</a>
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_输入端口">
+输入端口
+</a>
+
+</h3>
+<span title="点击以收缩或展开表" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+模块名称
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+代码标识符
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+数据类型
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+维度
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:766\')'})"  name="code2model" class="code2model">SupVoltage (':766')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.SupVoltage
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:767\')'})"  name="code2model" class="code2model">AmbTemperature (':767')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.AmbTemperature
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:768\')'})"  name="code2model" class="code2model">ChipFault (':768')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.ChipFault
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:1038\')'})"  name="code2model" class="code2model">PwmInPinSts (':1038')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.PwmInPinSts
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:1566\')'})"  name="code2model" class="code2model">SleepValid (':1566')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.SleepValid
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:1627\')'})"  name="code2model" class="code2model">PwmInFreq (':1627')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.PwmInFreq
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:1628\')'})"  name="code2model" class="code2model">PwmInHighDuty (':1628')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.PwmInHighDuty
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:1629\')'})"  name="code2model" class="code2model">PwmInIdleTime (':1629')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.PwmInIdleTime
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:1826\')'})"  name="code2model" class="code2model">IsMotorShort (':1826')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.IsMotorShort
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:1827\')'})"  name="code2model" class="code2model">IsMotorLock (':1827')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.IsMotorLock
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:1828\')'})"  name="code2model" class="code2model">IsMotorOpenLoad (':1828')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.IsMotorOpenLoad
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:1882\')'})"  name="code2model" class="code2model">RestartComplete (':1882')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.RestartComplete
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:2253\')'})"  name="code2model" class="code2model">FilteredVoltage (':2253')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.FilteredVoltage
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:2342\')'})"  name="code2model" class="code2model">IsMotorDryRunning (':2342')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.IsMotorDryRunning
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:2915\')'})"  name="code2model" class="code2model">TestModeSpeedCtrlEnable (':2915')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.TestModeSpeedCtrlEnable
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:2916\')'})"  name="code2model" class="code2model">TestModeSpeed (':2916')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.TestModeSpeed
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:3211\')'})"  name="code2model" class="code2model">FeedBackCnt (':3211')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.FeedBackCnt
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:3230\')'})"  name="code2model" class="code2model">FeedBackClearComplete (':3230')</a>
+</td>
+<td width="26%" align="left" valign="top">
+U.FeedBackClearComplete
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_输出端口">
+输出端口
+</a>
+
+</h3>
+<span title="点击以收缩或展开表" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+模块名称
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+代码标识符
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+数据类型
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+维度
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:1616\')'})"  name="code2model" class="code2model">MotorRestartEnable (':1616')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.MotorRestartEnable
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:1625\')'})"  name="code2model" class="code2model">ChipSleep (':1625')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.ChipSleep
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:1626\')'})"  name="code2model" class="code2model">ChipReset (':1626')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.ChipReset
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:2164\')'})"  name="code2model" class="code2model">FeedBackBusStatus (':2164')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.FeedBackBusStatus
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:2216\')'})"  name="code2model" class="code2model">TargetSpeedLimited (':2216')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.TargetSpeedLimited
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:2265\')'})"  name="code2model" class="code2model">VoltageStatus (':2265')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.VoltageStatus
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:2266\')'})"  name="code2model" class="code2model">AmbTStatus (':2266')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.AmbTStatus
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:2584\')'})"  name="code2model" class="code2model">ShortCnt (':2584')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.ShortCnt
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:2585\')'})"  name="code2model" class="code2model">OpenCnt (':2585')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.OpenCnt
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:2586\')'})"  name="code2model" class="code2model">LockCnt (':2586')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.LockCnt
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:3085\')'})"  name="code2model" class="code2model">PwmInError (':3085')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.PwmInError
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:3087\')'})"  name="code2model" class="code2model">PwmInShortGND (':3087')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.PwmInShortGND
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:3089\')'})"  name="code2model" class="code2model">PwmInShortBat (':3089')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.PwmInShortBat
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:3162\')'})"  name="code2model" class="code2model">DryRunningCnt (':3162')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.DryRunningCnt
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:3186\')'})"  name="code2model" class="code2model">FeedBackFlag (':3186')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.FeedBackFlag
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:3214\')'})"  name="code2model" class="code2model">FeedBackFlagLast (':3214')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.FeedBackFlagLast
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:3218\')'})"  name="code2model" class="code2model">FaultRecoverCntOut (':3218')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.FaultRecoverCntOut
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'AppMain:3227\')'})"  name="code2model" class="code2model">FeedBackClearEn (':3227')</a>
+</td>
+<td width="26%" align="left" valign="top">
+Y.FeedBackClearEn
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_接口参数">
+接口参数
+</a>
+
+</h3>
+<p>
+模型中没有接口/可调参数。
+</p>
+<h3>
+<a name="sec_数据存储">
+数据存储
+</a>
+
+</h3>
+<p>
+模型中没有数据存储；请注意，此报告仅列出具有非自动存储类和全局数据存储的数据存储
+</p>
+
+<script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script>
+</body>
+
+</html>

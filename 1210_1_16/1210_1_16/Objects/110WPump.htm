@@ -1,0 +1,1641 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\110WPump.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\110WPump.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Apr 18 09:20:49 2024
+<BR><P>
+<H3>Maximum Stack Usage =        228 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; AppMain_step &rArr; PwmInTargetSpeedEval &rArr; PwmInSpeedCtrl &rArr; PwmInNotShort &rArr; DutyFilter &rArr; BufDataSameFirstCnt
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[1d]">SVC_Handler_main</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1d]">SVC_Handler_main</a><BR>
+ <LI><a href="#[1]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">NMI_Handler</a><BR>
+ <LI><a href="#[7]">DebugMon_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7]">DebugMon_Handler</a><BR>
+ <LI><a href="#[8]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[8]">PendSV_Handler</a><BR>
+ <LI><a href="#[d]">ADC1_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d]">ADC1_IRQHandler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[d]">ADC1_IRQHandler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[c]">ADC2_IRQHandler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[18]">BDRV_IRQHandler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[4]">BusFault_Handler</a> from isr.o(i.BusFault_Handler) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[e]">CCU6SR0_IRQHandler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[f]">CCU6SR1_IRQHandler</a> from isr.o(i.CCU6SR1_IRQHandler) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[10]">CCU6SR2_IRQHandler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[11]">CCU6SR3_IRQHandler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[19]">DMA_IRQHandler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[7]">DebugMon_Handler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[16]">EXINT0_IRQHandler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[17]">EXINT1_IRQHandler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[a]">GPT1_IRQHandler</a> from isr.o(i.GPT1_IRQHandler) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[b]">GPT2_IRQHandler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from isr.o(i.HardFault_Handler) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[3]">MemManage_Handler</a> from isr.o(i.MemManage_Handler) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[8]">PendSV_Handler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[12]">SSC1_IRQHandler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[13]">SSC2_IRQHandler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[6]">SVC_Handler</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[1d]">SVC_Handler_main</a> from startup_tle987x.o(.text) referenced from startup_tle987x.o(.text)
+ <LI><a href="#[9]">SysTick_Handler</a> from isr.o(i.SysTick_Handler) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[1b]">SystemInit</a> from system_tle987x.o(i.SystemInit) referenced from startup_tle987x.o(.text)
+ <LI><a href="#[14]">UART1_IRQHandler</a> from isr.o(i.UART1_IRQHandler) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[15]">UART2_IRQHandler</a> from isr.o(i.UART2_IRQHandler) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[5]">UsageFault_Handler</a> from isr.o(i.UsageFault_Handler) referenced from startup_tle987x.o(RESET)
+ <LI><a href="#[1c]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_tle987x.o(.text)
+ <LI><a href="#[1a]">main</a> from main.o(i.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[1c]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(.text)
+</UL>
+<P><STRONG><a name="[e8]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[1e]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[31]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[e9]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[ea]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[eb]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[ec]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
+
+<P><STRONG><a name="[ed]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[ee]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
+
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>SVC_Handler_main</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler_main
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler_main
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(.text)
+</UL>
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>ADC1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>ADC2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>BDRV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>CCU6SR0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>CCU6SR2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>CCU6SR3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>DMA_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>EXINT0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>EXINT1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>GPT2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>SSC1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>SSC2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[68]"></a>abs</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, siabs.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_RAM_MHighTask
+</UL>
+
+<P><STRONG><a name="[74]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocVar
+</UL>
+
+<P><STRONG><a name="[ef]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[f0]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[21]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[f1]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[f2]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[20]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_initialize
+</UL>
+
+<P><STRONG><a name="[f3]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[f4]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[22]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[6d]"></a>__aeabi_fmul</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, fmul.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_fmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[23]"></a>__aeabi_fdiv</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, fdiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_fdiv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_float_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[72]"></a>__ARM_scalbnf</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, fscalb.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[f5]"></a>scalbnf</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, fscalb.o(.text), UNUSED)
+
+<P><STRONG><a name="[25]"></a>__aeabi_dmul</STRONG> (Thumb, 228 bytes, Stack size 48 bytes, dmul.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[27]"></a>__aeabi_ddiv</STRONG> (Thumb, 222 bytes, Stack size 32 bytes, ddiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __aeabi_ddiv &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[70]"></a>__ARM_scalbn</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, dscalb.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __ARM_scalbn
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[f6]"></a>scalbn</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, dscalb.o(.text), UNUSED)
+
+<P><STRONG><a name="[29]"></a>__aeabi_ui2f</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, ffltui.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __aeabi_ui2f &rArr; _float_epilogue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_float_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[2b]"></a>__aeabi_ui2d</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, dfltui.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[73]"></a>__aeabi_f2iz</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, ffixi.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[71]"></a>__aeabi_f2uiz</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, ffixui.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[2c]"></a>__aeabi_d2iz</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, dfixi.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_d2iz
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[2e]"></a>__aeabi_d2uiz</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, dfixui.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_d2uiz
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[6f]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[2f]"></a>__aeabi_d2f</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, d2f.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_d2f
+</UL>
+<BR>[Calls]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_float_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[30]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+
+<P><STRONG><a name="[f7]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+
+<P><STRONG><a name="[2d]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
+<LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+
+<P><STRONG><a name="[f8]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+
+<P><STRONG><a name="[f9]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, iusefp.o(.text), UNUSED)
+
+<P><STRONG><a name="[24]"></a>_float_round</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, fepilogue.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
+</UL>
+
+<P><STRONG><a name="[2a]"></a>_float_epilogue</STRONG> (Thumb, 92 bytes, Stack size 4 bytes, fepilogue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = _float_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+</UL>
+
+<P><STRONG><a name="[28]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, depilogue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+
+<P><STRONG><a name="[26]"></a>_double_epilogue</STRONG> (Thumb, 156 bytes, Stack size 32 bytes, depilogue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+</UL>
+
+<P><STRONG><a name="[1f]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[fa]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[fb]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[fc]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[af]"></a>ADC1_GetChResult</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, adc1.o(i.ADC1_GetChResult))
+<BR><BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_ADCGetChResult
+</UL>
+
+<P><STRONG><a name="[c2]"></a>ADC1_Init</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, adc1.o(i.ADC1_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[c3]"></a>ADC2_Init</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, adc2.o(i.ADC2_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[32]"></a>ADCSample_GetAmbT</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, adcsample.o(i.ADCSample_GetAmbT))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ADCSample_GetAmbT &rArr; SDK_ADCGetChResult
+</UL>
+<BR>[Calls]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_ADCGetChResult
+<LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Common_ExeLookUpTable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSample_PeriodTask
+</UL>
+
+<P><STRONG><a name="[35]"></a>ADCSample_GetBat</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, adcsample.o(i.ADCSample_GetBat))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ADCSample_GetBat &rArr; SDK_ADCGetChResult
+</UL>
+<BR>[Calls]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_ADCGetChResult
+</UL>
+<BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSample_PeriodTask
+</UL>
+
+<P><STRONG><a name="[36]"></a>ADCSample_PeriodTask</STRONG> (Thumb, 162 bytes, Stack size 8 bytes, adcsample.o(i.ADCSample_PeriodTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ADCSample_PeriodTask &rArr; ADCSample_GetBat &rArr; SDK_ADCGetChResult
+</UL>
+<BR>[Calls]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_ADCGetChResult
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSample_GetBat
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSample_GetAmbT
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSample_BatVoltageFilter
+</UL>
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_Init
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[38]"></a>AmbTOverDiag</STRONG> (Thumb, 268 bytes, Stack size 40 bytes, rt_sys_ecufaultdiag_0.o(i.AmbTOverDiag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = AmbTOverDiag &rArr; UpdateStateCnt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateStateCnt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_step
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AmbTemperatureDiag
+</UL>
+
+<P><STRONG><a name="[3c]"></a>AmbTOverDiag_Init</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, rt_sys_ecufaultdiag_0.o(i.AmbTOverDiag_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_initialize
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AmbTemperatureDiag_Init
+</UL>
+
+<P><STRONG><a name="[3a]"></a>AmbTemperatureDiag</STRONG> (Thumb, 36 bytes, Stack size 32 bytes, ecufaultdiag.o(i.AmbTemperatureDiag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = AmbTemperatureDiag &rArr; AmbTOverDiag &rArr; UpdateStateCnt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AmbTOverDiag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ECUFaultDiag
+</UL>
+
+<P><STRONG><a name="[3b]"></a>AmbTemperatureDiag_Init</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, ecufaultdiag.o(i.AmbTemperatureDiag_Init))
+<BR><BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AmbTOverDiag_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ECUFaultDiag_Init
+</UL>
+
+<P><STRONG><a name="[3d]"></a>AppMain_initialize</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, appmain.o(i.AppMain_initialize))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = AppMain_initialize &rArr; PwmInTargetSpeedEval_Init &rArr; PwmInSpeedCtrl_Init &rArr; PwmInNotShort_Init &rArr; DutyFilter_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInTargetSpeedEval_Init
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorRestartAndFaultCnt_Init
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FeedBack_Init
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ECUFaultDiag_Init
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AmbTOverDiag_Init
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[42]"></a>AppMain_step</STRONG> (Thumb, 308 bytes, Stack size 72 bytes, appmain.o(i.AppMain_step))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = AppMain_step &rArr; PwmInTargetSpeedEval &rArr; PwmInSpeedCtrl &rArr; PwmInNotShort &rArr; DutyFilter &rArr; BufDataSameFirstCnt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInTargetSpeedEval
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInParamEval
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorTargetSpeedMux
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorRestartAndFaultCnt
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FeedBack
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ECUFaultDiag
+<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AmbTOverDiag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[49]"></a>AppTimeBaseHandler</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, isrhandler.o(i.AppTimeBaseHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = AppTimeBaseHandler &rArr; Emo_MLowTask &rArr; Emo_StopMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_MLowTask
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+
+<P><STRONG><a name="[6b]"></a>BDRV_Clr_Sts</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, bdrv.o(i.BDRV_Clr_Sts))
+<BR><BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_StartMotor
+</UL>
+
+<P><STRONG><a name="[c4]"></a>BDRV_Init</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, bdrv.o(i.BDRV_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[6c]"></a>BDRV_Set_Bridge</STRONG> (Thumb, 112 bytes, Stack size 20 bytes, bdrv.o(i.BDRV_Set_Bridge))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = BDRV_Set_Bridge
+</UL>
+<BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_StopMotor
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_StartMotor
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_BDRV_TestMos
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_BDRV_Off
+</UL>
+
+<P><STRONG><a name="[5b]"></a>BufDataSameFirstCnt</STRONG> (Thumb, 96 bytes, Stack size 20 bytes, pwmintargetspeedeval.o(i.BufDataSameFirstCnt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = BufDataSameFirstCnt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DutyFilter
+</UL>
+
+<P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, isr.o(i.BusFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>CCU6SR1_IRQHandler</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, isr.o(i.CCU6SR1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = CCU6SR1_IRQHandler &rArr; T12_PM_Handler &rArr; TestMode_TestMOS &rArr; SDK_BDRV_TestMos &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;T12_PM_Handler
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;T12_OM_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[c5]"></a>CCU6_Init</STRONG> (Thumb, 110 bytes, Stack size 0 bytes, ccu6.o(i.CCU6_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[c6]"></a>CSA_Init</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, csa.o(i.CSA_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[77]"></a>Common_CopyMem</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, common.o(i.Common_CopyMem))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Common_CopyMem
+</UL>
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_StartFrameTransmission
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_RxHandler
+</UL>
+
+<P><STRONG><a name="[34]"></a>Common_ExeLookUpTable</STRONG> (Thumb, 110 bytes, Stack size 12 bytes, common.o(i.Common_ExeLookUpTable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = Common_ExeLookUpTable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSample_GetAmbT
+</UL>
+
+<P><STRONG><a name="[b3]"></a>Common_SetStatusDelay</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, common.o(i.Common_SetStatusDelay))
+<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_EcuFaultDiag
+</UL>
+
+<P><STRONG><a name="[d2]"></a>DMA_Init</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dma.o(i.DMA_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[dc]"></a>DTC_GetRecord</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, dtc.o(i.DTC_GetRecord))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DTC_GetRecord
+</UL>
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_UartDebugPeriodTask
+</UL>
+
+<P><STRONG><a name="[4d]"></a>DTC_Init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, dtc.o(i.DTC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = DTC_Init &rArr; DTCPowerCntUpdate
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_isDtcDataValid
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTCVarReset
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTCPowerCntUpdate
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_EEPROM_Read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[52]"></a>DTC_PeriodTask</STRONG> (Thumb, 842 bytes, Stack size 24 bytes, dtc.o(i.DTC_PeriodTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = DTC_PeriodTask &rArr; SDK_writeDFlash &rArr; ProgramPage
+</UL>
+<BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_UpdateFaultTotalCnt
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_UpdateFaultRePowerInfo
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_CaculateCheckSum
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTCVarReset
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_writeDFlash
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_clrDFlashError
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[7d]"></a>DelayOut</STRONG> (Thumb, 112 bytes, Stack size 20 bytes, feedback.o(i.DelayOut))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = DelayOut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FeedBackDelay
+</UL>
+
+<P><STRONG><a name="[7f]"></a>DelayOut_Init</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, feedback.o(i.DelayOut_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FeedBackDelay_Init
+</UL>
+
+<P><STRONG><a name="[5a]"></a>DutyBufUpdate</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, pwmintargetspeedeval.o(i.DutyBufUpdate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DutyBufUpdate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DutyFilter
+</UL>
+
+<P><STRONG><a name="[58]"></a>DutyFilter</STRONG> (Thumb, 218 bytes, Stack size 44 bytes, pwmintargetspeedeval.o(i.DutyFilter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = DutyFilter &rArr; BufDataSameFirstCnt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DutyFilter_Reset
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DutyBufUpdate
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BufDataSameFirstCnt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInNotShort
+</UL>
+
+<P><STRONG><a name="[95]"></a>DutyFilter_Init</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, pwmintargetspeedeval.o(i.DutyFilter_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DutyFilter_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInNotShort_Init
+</UL>
+
+<P><STRONG><a name="[59]"></a>DutyFilter_Reset</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, pwmintargetspeedeval.o(i.DutyFilter_Reset))
+<BR><BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DutyFilter
+</UL>
+
+<P><STRONG><a name="[45]"></a>ECUFaultDiag</STRONG> (Thumb, 62 bytes, Stack size 32 bytes, ecufaultdiag.o(i.ECUFaultDiag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = ECUFaultDiag &rArr; AmbTemperatureDiag &rArr; AmbTOverDiag &rArr; UpdateStateCnt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VoltageDiag
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AmbTemperatureDiag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_step
+</UL>
+
+<P><STRONG><a name="[3f]"></a>ECUFaultDiag_Init</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, ecufaultdiag.o(i.ECUFaultDiag_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ECUFaultDiag_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VoltageDiag_Init
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AmbTemperatureDiag_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_initialize
+</UL>
+
+<P><STRONG><a name="[5e]"></a>Emo_CaculateIShunt</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, emo.o(i.Emo_CaculateIShunt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Emo_CaculateIShunt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mat_ExeLp_without_min_max
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_MLowTask
+</UL>
+
+<P><STRONG><a name="[65]"></a>Emo_IShuntLimit</STRONG> (Thumb, 320 bytes, Stack size 32 bytes, emo.o(i.Emo_IShuntLimit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Emo_IShuntLimit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_MLowTask
+</UL>
+
+<P><STRONG><a name="[60]"></a>Emo_Init</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, emo.o(i.Emo_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = Emo_Init &rArr; Emo_lInitFocPar &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSample_PeriodTask
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorInit
+</UL>
+
+<P><STRONG><a name="[4a]"></a>Emo_MLowTask</STRONG> (Thumb, 456 bytes, Stack size 24 bytes, emo.o(i.Emo_MLowTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = Emo_MLowTask &rArr; Emo_StopMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_StopMotor
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_StartMotor
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_IShuntLimit
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_CaculateIShunt
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mat_Ramp
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mat_ExeLp_without_min_max
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTimeBaseHandler
+</UL>
+
+<P><STRONG><a name="[66]"></a>Emo_RAM_CurrAdc1</STRONG> (Thumb, 180 bytes, Stack size 16 bytes, emo_ram.o(i.Emo_RAM_CurrAdc1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = Emo_RAM_CurrAdc1 &rArr; Emo_StopMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_StopMotor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_RAM_MHighTask
+</UL>
+
+<P><STRONG><a name="[67]"></a>Emo_RAM_MHighTask</STRONG> (Thumb, 1782 bytes, Stack size 40 bytes, emo_ram.o(i.Emo_RAM_MHighTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = Emo_RAM_MHighTask &rArr; Emo_RAM_CurrAdc1 &rArr; Emo_StopMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_RAM_CurrAdc1
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_RAM_T2C
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abs
+</UL>
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT1_T2_Handler
+</UL>
+
+<P><STRONG><a name="[63]"></a>Emo_StartMotor</STRONG> (Thumb, 152 bytes, Stack size 24 bytes, emo.o(i.Emo_StartMotor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = Emo_StartMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BDRV_Clr_Sts
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocVar
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BDRV_Set_Bridge
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorSetSpeed
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_MLowTask
+</UL>
+
+<P><STRONG><a name="[62]"></a>Emo_StopMotor</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, emo.o(i.Emo_StopMotor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = Emo_StopMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BDRV_Set_Bridge
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorSetSpeed
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorPeriodTask
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_RAM_CurrAdc1
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_MLowTask
+</UL>
+
+<P><STRONG><a name="[6e]"></a>Emo_calIShuntZero</STRONG> (Thumb, 438 bytes, Stack size 36 bytes, emo.o(i.Emo_calIShuntZero))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = Emo_calIShuntZero
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_lInitFocPar
+</UL>
+
+<P><STRONG><a name="[61]"></a>Emo_lInitFocPar</STRONG> (Thumb, 1528 bytes, Stack size 88 bytes, emo.o(i.Emo_lInitFocPar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = Emo_lInitFocPar &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2iz
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
+<LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_scalbnf
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_scalbn
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_calIShuntZero
+</UL>
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_Init
+</UL>
+
+<P><STRONG><a name="[6a]"></a>Emo_lInitFocVar</STRONG> (Thumb, 150 bytes, Stack size 8 bytes, emo.o(i.Emo_lInitFocVar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Emo_lInitFocVar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_StartMotor
+</UL>
+
+<P><STRONG><a name="[d6]"></a>FanComTest_GetRxID</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, fancomtest.o(i.FanComTest_GetRxID))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_FctTest
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_UartDebugPeriodTask
+</UL>
+
+<P><STRONG><a name="[d7]"></a>FanComTest_ReadU8</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, fancomtest.o(i.FanComTest_ReadU8))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_FctTest
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_UartDebugPeriodTask
+</UL>
+
+<P><STRONG><a name="[de]"></a>FanComTest_ResetU8</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, fancomtest.o(i.FanComTest_ResetU8))
+<BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_UartDebugPeriodTask
+</UL>
+
+<P><STRONG><a name="[75]"></a>FanComTest_RxHandler</STRONG> (Thumb, 196 bytes, Stack size 16 bytes, fancomtest.o(i.FanComTest_RxHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = FanComTest_RxHandler &rArr; Common_CopyMem
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Common_CopyMem
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_UartErrHandle
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_UartReadU8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Uart2RxHandler
+</UL>
+
+<P><STRONG><a name="[79]"></a>FanComTest_StartFrameTransmission</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, fancomtest.o(i.FanComTest_StartFrameTransmission))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = FanComTest_StartFrameTransmission &rArr; Common_CopyMem
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Common_CopyMem
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_UartWriteU8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_FctTest
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_UartDebugPeriodTask
+</UL>
+
+<P><STRONG><a name="[7b]"></a>FanComTest_TxHandler</STRONG> (Thumb, 98 bytes, Stack size 8 bytes, fancomtest.o(i.FanComTest_TxHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = FanComTest_TxHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_UartWriteU8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Uart2TxHandler
+</UL>
+
+<P><STRONG><a name="[dd]"></a>FanComTest_WriteS16</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, fancomtest.o(i.FanComTest_WriteS16))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = FanComTest_WriteS16
+</UL>
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_UartDebugPeriodTask
+</UL>
+
+<P><STRONG><a name="[db]"></a>FanComTest_WriteU16</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, fancomtest.o(i.FanComTest_WriteU16))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = FanComTest_WriteU16
+</UL>
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_UartDebugPeriodTask
+</UL>
+
+<P><STRONG><a name="[d9]"></a>FanComTest_WriteU8</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, fancomtest.o(i.FanComTest_WriteU8))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_FctTest
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_UartDebugPeriodTask
+</UL>
+
+<P><STRONG><a name="[d8]"></a>FctEmo_calIShuntZero</STRONG> (Thumb, 318 bytes, Stack size 36 bytes, emo.o(i.FctEmo_calIShuntZero))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = FctEmo_calIShuntZero
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_FctTest
+</UL>
+
+<P><STRONG><a name="[48]"></a>FeedBack</STRONG> (Thumb, 658 bytes, Stack size 32 bytes, feedback.o(i.FeedBack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = FeedBack &rArr; FeedBackDelay &rArr; DelayOut
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FeedBackDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_step
+</UL>
+
+<P><STRONG><a name="[7c]"></a>FeedBackDelay</STRONG> (Thumb, 54 bytes, Stack size 20 bytes, feedback.o(i.FeedBackDelay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = FeedBackDelay &rArr; DelayOut
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayOut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FeedBack
+</UL>
+
+<P><STRONG><a name="[7e]"></a>FeedBackDelay_Init</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, feedback.o(i.FeedBackDelay_Init))
+<BR><BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayOut_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FeedBack_Init
+</UL>
+
+<P><STRONG><a name="[41]"></a>FeedBack_Init</STRONG> (Thumb, 94 bytes, Stack size 4 bytes, feedback.o(i.FeedBack_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = FeedBack_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FeedBackDelay_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_initialize
+</UL>
+
+<P><STRONG><a name="[92]"></a>FreqValidJudge</STRONG> (Thumb, 144 bytes, Stack size 28 bytes, pwmintargetspeedeval.o(i.FreqValidJudge))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = FreqValidJudge
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInNotShort
+</UL>
+
+<P><STRONG><a name="[94]"></a>FreqValidJudge_Init</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, pwmintargetspeedeval.o(i.FreqValidJudge_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInNotShort_Init
+</UL>
+
+<P><STRONG><a name="[97]"></a>FreqValidJudge_Reset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, pwmintargetspeedeval.o(i.FreqValidJudge_Reset))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInNotShort_Reset
+</UL>
+
+<P><STRONG><a name="[c7]"></a>GPT12E_Init</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, gpt12e.o(i.GPT12E_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[a]"></a>GPT1_IRQHandler</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, isr.o(i.GPT1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = GPT1_IRQHandler &rArr; GPT1_T2_Handler &rArr; Emo_RAM_MHighTask &rArr; Emo_RAM_CurrAdc1 &rArr; Emo_StopMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT1_T4_Handler
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT1_T2_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[80]"></a>GPT1_T2_Handler</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, isrhandler.o(i.GPT1_T2_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = GPT1_T2_Handler &rArr; Emo_RAM_MHighTask &rArr; Emo_RAM_CurrAdc1 &rArr; Emo_StopMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_RAM_MHighTask
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[81]"></a>GPT1_T4_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, isrhandler.o(i.GPT1_T4_Handler))
+<BR><BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, isr.o(i.HardFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[d3]"></a>INT_Init</STRONG> (Thumb, 126 bytes, Stack size 8 bytes, int.o(i.INT_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = INT_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[c8]"></a>LIN_Init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lin.o(i.LIN_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[c9]"></a>MON_Init</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, mon.o(i.MON_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, isr.o(i.MemManage_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[85]"></a>MotorAPI_MotorInit</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, motorapi.o(i.MotorAPI_MotorInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = MotorAPI_MotorInit &rArr; Emo_Init &rArr; Emo_lInitFocPar &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[88]"></a>MotorAPI_MotorPeriodTask</STRONG> (Thumb, 318 bytes, Stack size 24 bytes, motorapi.o(i.MotorAPI_MotorPeriodTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = MotorAPI_MotorPeriodTask &rArr; Emo_StopMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_StopMotor
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_OverCurrentMonitor
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorSpeedMonitor
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorOnShortMonitor
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorDryRunningMonitor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[8c]"></a>MotorAPI_MotorSetSpeed</STRONG> (Thumb, 180 bytes, Stack size 16 bytes, motorapi.o(i.MotorAPI_MotorSetSpeed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = MotorAPI_MotorSetSpeed &rArr; Emo_StopMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_StopMotor
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_StartMotor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_FctTest
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[47]"></a>MotorRestartAndFaultCnt</STRONG> (Thumb, 540 bytes, Stack size 56 bytes, motorrestartandfaultcnt.o(i.MotorRestartAndFaultCnt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = MotorRestartAndFaultCnt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Short
+</UL>
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_step
+</UL>
+
+<P><STRONG><a name="[40]"></a>MotorRestartAndFaultCnt_Init</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, motorrestartandfaultcnt.o(i.MotorRestartAndFaultCnt_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_initialize
+</UL>
+
+<P><STRONG><a name="[46]"></a>MotorTargetSpeedMux</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, motortargetspeedmux.o(i.MotorTargetSpeedMux))
+<BR><BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_step
+</UL>
+
+<P><STRONG><a name="[c1]"></a>PMU_Init</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, pmu.o(i.PMU_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[ca]"></a>PORT_Init</STRONG> (Thumb, 64 bytes, Stack size 0 bytes, port.o(i.PORT_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[8e]"></a>ProgramPage</STRONG> (Thumb, 110 bytes, Stack size 32 bytes, bootrom.o(i.ProgramPage))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ProgramPage
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WDT1_Service
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WDT1_SOW_Service
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_writeDFlash
+</UL>
+
+<P><STRONG><a name="[91]"></a>PwmInNotShort</STRONG> (Thumb, 110 bytes, Stack size 28 bytes, pwmintargetspeedeval.o(i.PwmInNotShort))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = PwmInNotShort &rArr; DutyFilter &rArr; BufDataSameFirstCnt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FreqValidJudge
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DutyFilter
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl
+</UL>
+
+<P><STRONG><a name="[9a]"></a>PwmInNotShort_Disable</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, pwmintargetspeedeval.o(i.PwmInNotShort_Disable))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl_Disable
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl
+</UL>
+
+<P><STRONG><a name="[93]"></a>PwmInNotShort_Init</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, pwmintargetspeedeval.o(i.PwmInNotShort_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PwmInNotShort_Init &rArr; DutyFilter_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FreqValidJudge_Init
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DutyFilter_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl_Init
+</UL>
+
+<P><STRONG><a name="[96]"></a>PwmInNotShort_Reset</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, pwmintargetspeedeval.o(i.PwmInNotShort_Reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PwmInNotShort_Reset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FreqValidJudge_Reset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl
+</UL>
+
+<P><STRONG><a name="[43]"></a>PwmInParamEval</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, pwminparameval.o(i.PwmInParamEval))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = PwmInParamEval &rArr; PwmInshortDetect
+</UL>
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInshortDetect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_step
+</UL>
+
+<P><STRONG><a name="[9c]"></a>PwmInShort</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, pwmintargetspeedeval.o(i.PwmInShort))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PwmInShort
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl
+</UL>
+
+<P><STRONG><a name="[a3]"></a>PwmInShort_Init</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, pwmintargetspeedeval.o(i.PwmInShort_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl_Init
+</UL>
+
+<P><STRONG><a name="[9b]"></a>PwmInShort_Reset</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, pwmintargetspeedeval.o(i.PwmInShort_Reset))
+<BR><BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl
+</UL>
+
+<P><STRONG><a name="[99]"></a>PwmInSpeedCtrl</STRONG> (Thumb, 318 bytes, Stack size 48 bytes, pwmintargetspeedeval.o(i.PwmInSpeedCtrl))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = PwmInSpeedCtrl &rArr; PwmInNotShort &rArr; DutyFilter &rArr; BufDataSameFirstCnt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedDelayOut
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedCurve
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInShort_Reset
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInShort
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInNotShort_Reset
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInNotShort_Disable
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInNotShort
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;look1_is16lu32n16Ds32_binlcs
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;asr_s32
+</UL>
+<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInTargetSpeedEval
+</UL>
+
+<P><STRONG><a name="[a1]"></a>PwmInSpeedCtrl_Disable</STRONG> (Thumb, 28 bytes, Stack size 4 bytes, pwmintargetspeedeval.o(i.PwmInSpeedCtrl_Disable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = PwmInSpeedCtrl_Disable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInNotShort_Disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInTargetSpeedEval
+</UL>
+
+<P><STRONG><a name="[a2]"></a>PwmInSpeedCtrl_Init</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, pwmintargetspeedeval.o(i.PwmInSpeedCtrl_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PwmInSpeedCtrl_Init &rArr; PwmInNotShort_Init &rArr; DutyFilter_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedDelayOut_Init
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInShort_Init
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInNotShort_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInTargetSpeedEval_Init
+</UL>
+
+<P><STRONG><a name="[44]"></a>PwmInTargetSpeedEval</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, pwmintargetspeedeval.o(i.PwmInTargetSpeedEval))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = PwmInTargetSpeedEval &rArr; PwmInSpeedCtrl &rArr; PwmInNotShort &rArr; DutyFilter &rArr; BufDataSameFirstCnt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl_Disable
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_step
+</UL>
+
+<P><STRONG><a name="[3e]"></a>PwmInTargetSpeedEval_Init</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, pwmintargetspeedeval.o(i.PwmInTargetSpeedEval_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PwmInTargetSpeedEval_Init &rArr; PwmInSpeedCtrl_Init &rArr; PwmInNotShort_Init &rArr; DutyFilter_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_initialize
+</UL>
+
+<P><STRONG><a name="[a5]"></a>PwmIn_CaptureHandler</STRONG> (Thumb, 158 bytes, Stack size 16 bytes, pwmin.o(i.PwmIn_CaptureHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PwmIn_CaptureHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_PwmInSetCaptureFallingEdge
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_PwmInGetCaptureCnt
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_PwmInCaptureTimerReset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer2CaptureHandler
+</UL>
+
+<P><STRONG><a name="[a9]"></a>PwmIn_CaptureTimerOverFlowHandler</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, pwmin.o(i.PwmIn_CaptureTimerOverFlowHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PwmIn_CaptureTimerOverFlowHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_PwmInIsCaptureTimerRunning
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_PwmInGetCaptureCnt
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_IsPwmInCap
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer2OverflowHandler
+</UL>
+
+<P><STRONG><a name="[ac]"></a>PwmIn_PeriodTask</STRONG> (Thumb, 302 bytes, Stack size 40 bytes, pwmin.o(i.PwmIn_PeriodTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = PwmIn_PeriodTask
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_PwmInGetBusStatus
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmIn_CalulatePulseWidth
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[98]"></a>PwmInshortDetect</STRONG> (Thumb, 60 bytes, Stack size 12 bytes, pwminparameval.o(i.PwmInshortDetect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = PwmInshortDetect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInParamEval
+</UL>
+
+<P><STRONG><a name="[bc]"></a>SCU_ClkInit</STRONG> (Thumb, 318 bytes, Stack size 16 bytes, scu.o(i.SCU_ClkInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SCU_ClkInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[c0]"></a>SCU_Init</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, scu.o(i.SCU_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[33]"></a>SDK_ADCGetChResult</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, sdk.o(i.SDK_ADCGetChResult))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SDK_ADCGetChResult
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_GetChResult
+</UL>
+<BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSample_GetBat
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSample_GetAmbT
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSample_PeriodTask
+</UL>
+
+<P><STRONG><a name="[87]"></a>SDK_BDRVGetShortStatus</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, sdk.o(i.SDK_BDRVGetShortStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorOnShortMonitor
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_FctTest
+</UL>
+
+<P><STRONG><a name="[b0]"></a>SDK_BDRV_Off</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, sdk.o(i.SDK_BDRV_Off))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = SDK_BDRV_Off &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BDRV_Set_Bridge
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_FctTest
+</UL>
+
+<P><STRONG><a name="[b1]"></a>SDK_BDRV_TestMos</STRONG> (Thumb, 192 bytes, Stack size 24 bytes, sdk.o(i.SDK_BDRV_TestMos))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = SDK_BDRV_TestMos &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BDRV_Set_Bridge
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_TestMOS
+</UL>
+
+<P><STRONG><a name="[4e]"></a>SDK_EEPROM_Read</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, sdk.o(i.SDK_EEPROM_Read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SDK_EEPROM_Read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_Init
+</UL>
+
+<P><STRONG><a name="[b2]"></a>SDK_EcuFaultDiag</STRONG> (Thumb, 720 bytes, Stack size 24 bytes, sdk.o(i.SDK_EcuFaultDiag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SDK_EcuFaultDiag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Common_SetStatusDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b4]"></a>SDK_FeedWDog</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, sdk.o(i.SDK_FeedWDog))
+<BR><BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WDT1_Service
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b5]"></a>SDK_HardwareInit</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, sdk.o(i.SDK_HardwareInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SDK_HardwareInit &rArr; TLE_Init &rArr; INT_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_PMU_VDDEXT_ForceOn
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[ab]"></a>SDK_IsPwmInCap</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, sdk.o(i.SDK_IsPwmInCap))
+<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmIn_CaptureTimerOverFlowHandler
+</UL>
+
+<P><STRONG><a name="[b8]"></a>SDK_Mem_Check</STRONG> (Thumb, 90 bytes, Stack size 24 bytes, sdk.o(i.SDK_Mem_Check))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = SDK_Mem_Check &rArr; SDK_RAM_Check
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_RAM_Check
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_NVM_ECC_Check
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WDT1_Service
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a7]"></a>SDK_PwmInCaptureTimerReset</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, sdk.o(i.SDK_PwmInCaptureTimerReset))
+<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmIn_CaptureHandler
+</UL>
+
+<P><STRONG><a name="[ae]"></a>SDK_PwmInGetBusStatus</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, sdk.o(i.SDK_PwmInGetBusStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmIn_PeriodTask
+</UL>
+
+<P><STRONG><a name="[a6]"></a>SDK_PwmInGetCaptureCnt</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, sdk.o(i.SDK_PwmInGetCaptureCnt))
+<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmIn_CaptureTimerOverFlowHandler
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmIn_CaptureHandler
+</UL>
+
+<P><STRONG><a name="[aa]"></a>SDK_PwmInIsCaptureTimerRunning</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, sdk.o(i.SDK_PwmInIsCaptureTimerRunning))
+<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmIn_CaptureTimerOverFlowHandler
+</UL>
+
+<P><STRONG><a name="[a8]"></a>SDK_PwmInSetCaptureFallingEdge</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, sdk.o(i.SDK_PwmInSetCaptureFallingEdge))
+<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmIn_CaptureHandler
+</UL>
+
+<P><STRONG><a name="[84]"></a>SDK_PwmOutHigh</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, sdk.o(i.SDK_PwmOutHigh))
+<BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_FeedBackBusOutput
+</UL>
+
+<P><STRONG><a name="[83]"></a>SDK_PwmOutLow</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, sdk.o(i.SDK_PwmOutLow))
+<BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_FeedBackBusOutput
+</UL>
+
+<P><STRONG><a name="[e5]"></a>SDK_PwmOutToggle</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, sdk.o(i.SDK_PwmOutToggle))
+<BR><BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[e6]"></a>SDK_SystemReset</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sdk.o(i.SDK_SystemReset))
+<BR><BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[76]"></a>SDK_UartReadU8</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sdk.o(i.SDK_UartReadU8))
+<BR><BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_RxHandler
+</UL>
+
+<P><STRONG><a name="[7a]"></a>SDK_UartWriteU8</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, sdk.o(i.SDK_UartWriteU8))
+<BR><BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_StartFrameTransmission
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_TxHandler
+</UL>
+
+<P><STRONG><a name="[55]"></a>SDK_clrDFlashError</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, sdk.o(i.SDK_clrDFlashError))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SDK_clrDFlashError &rArr; SDK_NVM_ECC_Check
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_NVM_ECC_Check
+</UL>
+<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_PeriodTask
+</UL>
+
+<P><STRONG><a name="[57]"></a>SDK_writeDFlash</STRONG> (Thumb, 66 bytes, Stack size 32 bytes, sdk.o(i.SDK_writeDFlash))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SDK_writeDFlash &rArr; ProgramPage
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramPage
+</UL>
+<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_PeriodTask
+</UL>
+
+<P><STRONG><a name="[cb]"></a>SSC1_Init</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, ssc.o(i.SSC1_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[cc]"></a>SSC2_Init</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, ssc.o(i.SSC2_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[8d]"></a>Short</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, motorrestartandfaultcnt.o(i.Short))
+<BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorRestartAndFaultCnt
+</UL>
+
+<P><STRONG><a name="[a0]"></a>SpeedCurve</STRONG> (Thumb, 162 bytes, Stack size 32 bytes, pwmintargetspeedeval.o(i.SpeedCurve))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SpeedCurve &rArr; mul_u32_sat &rArr; mul_wide_u32
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mul_u32_sat
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl
+</UL>
+
+<P><STRONG><a name="[9d]"></a>SpeedDelayOut</STRONG> (Thumb, 58 bytes, Stack size 20 bytes, pwmintargetspeedeval.o(i.SpeedDelayOut))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SpeedDelayOut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl
+</UL>
+
+<P><STRONG><a name="[a4]"></a>SpeedDelayOut_Init</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, pwmintargetspeedeval.o(i.SpeedDelayOut_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl_Init
+</UL>
+
+<P><STRONG><a name="[9]"></a>SysTick_Handler</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, isr.o(i.SysTick_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = SysTick_Handler &rArr; AppTimeBaseHandler &rArr; Emo_MLowTask &rArr; Emo_StopMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTimeBaseHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[bd]"></a>SysTick_Init</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, wdt1.o(i.SysTick_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[1b]"></a>SystemInit</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, system_tle987x.o(i.SystemInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SystemInit &rArr; SCU_ClkInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WDT1_Init
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Init
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCU_ClkInit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(.text)
+</UL>
+<P><STRONG><a name="[4b]"></a>T12_OM_Handler</STRONG> (Thumb, 102 bytes, Stack size 0 bytes, emo_ram.o(i.T12_OM_Handler))
+<BR><BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CCU6SR1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[4c]"></a>T12_PM_Handler</STRONG> (Thumb, 84 bytes, Stack size 0 bytes, emo_ram.o(i.T12_PM_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = T12_PM_Handler &rArr; TestMode_TestMOS &rArr; SDK_BDRV_TestMos &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_TestMOS
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CCU6SR1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[ce]"></a>TIMER21_Init</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, timer2x.o(i.TIMER21_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[cd]"></a>TIMER2_Init</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, timer2x.o(i.TIMER2_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[cf]"></a>TIMER3_Init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, timer3.o(i.TIMER3_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[b6]"></a>TLE_Init</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, tle_device.o(i.TLE_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TLE_Init &rArr; INT_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CCU6_Init
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BDRV_Init
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC2_Init
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_Init
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_Init
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART1_Init
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER3_Init
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER2_Init
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER21_Init
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSC2_Init
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSC1_Init
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCU_Init
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_Init
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PMU_Init
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MON_Init
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIN_Init
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;INT_Init
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT12E_Init
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_Init
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CSA_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_HardwareInit
+</UL>
+
+<P><STRONG><a name="[d4]"></a>TestMode_FactoryTest</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, testmode.o(i.TestMode_FactoryTest))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = TestMode_FactoryTest &rArr; TestMode_FctTest &rArr; MotorAPI_MotorSetSpeed &rArr; Emo_StopMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_FctTest
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[bf]"></a>TestMode_TestMOS</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, testmode.o(i.TestMode_TestMOS))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = TestMode_TestMOS &rArr; SDK_BDRV_TestMos &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_BDRV_TestMos
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_FctTest
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;T12_PM_Handler
+</UL>
+
+<P><STRONG><a name="[da]"></a>TestMode_UartDebugPeriodTask</STRONG> (Thumb, 560 bytes, Stack size 24 bytes, testmode.o(i.TestMode_UartDebugPeriodTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = TestMode_UartDebugPeriodTask &rArr; FanComTest_StartFrameTransmission &rArr; Common_CopyMem
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_WriteU8
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_WriteU16
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_WriteS16
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_StartFrameTransmission
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_ResetU8
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_ReadU8
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_GetRxID
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_GetRecord
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[df]"></a>Timer2CaptureHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, isrhandler.o(i.Timer2CaptureHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Timer2CaptureHandler &rArr; PwmIn_CaptureHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmIn_CaptureHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[e0]"></a>Timer2OverflowHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, isrhandler.o(i.Timer2OverflowHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Timer2OverflowHandler &rArr; PwmIn_CaptureTimerOverFlowHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmIn_CaptureTimerOverFlowHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[14]"></a>UART1_IRQHandler</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, isr.o(i.UART1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = UART1_IRQHandler &rArr; Timer2CaptureHandler &rArr; PwmIn_CaptureHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer2OverflowHandler
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer2CaptureHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[d0]"></a>UART1_Init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, uart.o(i.UART1_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[15]"></a>UART2_IRQHandler</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, isr.o(i.UART2_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = UART2_IRQHandler &rArr; Uart2RxHandler &rArr; FanComTest_RxHandler &rArr; Common_CopyMem
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Uart2TxHandler
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Uart2RxHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[d1]"></a>UART2_Init</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, uart.o(i.UART2_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TLE_Init
+</UL>
+
+<P><STRONG><a name="[e1]"></a>Uart2RxHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, isrhandler.o(i.Uart2RxHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Uart2RxHandler &rArr; FanComTest_RxHandler &rArr; Common_CopyMem
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_RxHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_IRQHandler
+</UL>
+
+<P><STRONG><a name="[e2]"></a>Uart2TxHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, isrhandler.o(i.Uart2TxHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Uart2TxHandler &rArr; FanComTest_TxHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_TxHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_IRQHandler
+</UL>
+
+<P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, isr.o(i.UsageFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL>
+<P><STRONG><a name="[5c]"></a>VoltageDiag</STRONG> (Thumb, 208 bytes, Stack size 24 bytes, ecufaultdiag.o(i.VoltageDiag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = VoltageDiag &rArr; UpdateStateCnt_ofed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateStateCnt_ofed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ECUFaultDiag
+</UL>
+
+<P><STRONG><a name="[5d]"></a>VoltageDiag_Init</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, ecufaultdiag.o(i.VoltageDiag_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ECUFaultDiag_Init
+</UL>
+
+<P><STRONG><a name="[be]"></a>WDT1_Init</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, wdt1.o(i.WDT1_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[8f]"></a>WDT1_SOW_Service</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, wdt1.o(i.WDT1_SOW_Service))
+<BR><BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramPage
+</UL>
+
+<P><STRONG><a name="[90]"></a>WDT1_Service</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, wdt1.o(i.WDT1_Service))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_RAM_Check
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_Mem_Check
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_FeedWDog
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramPage
+</UL>
+
+<P><STRONG><a name="[fd]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[fe]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[ff]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[9f]"></a>asr_s32</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, appmain.o(i.asr_s32))
+<BR><BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;look1_is16lu32n16Ds32_binlcs
+</UL>
+
+<P><STRONG><a name="[9e]"></a>look1_is16lu32n16Ds32_binlcs</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, appmain.o(i.look1_is16lu32n16Ds32_binlcs))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = look1_is16lu32n16Ds32_binlcs
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;asr_s32
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmInSpeedCtrl
+</UL>
+
+<P><STRONG><a name="[1a]"></a>main</STRONG> (Thumb, 240 bytes, Stack size 0 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = main &rArr; AppMain_step &rArr; PwmInTargetSpeedEval &rArr; PwmInSpeedCtrl &rArr; PwmInNotShort &rArr; DutyFilter &rArr; BufDataSameFirstCnt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_UartDebugPeriodTask
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_FactoryTest
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_SystemReset
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_PwmOutToggle
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_Mem_Check
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_HardwareInit
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_FeedWDog
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_EcuFaultDiag
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmIn_PeriodTask
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorSetSpeed
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorPeriodTask
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorInit
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_PeriodTask
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_Init
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_step
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppMain_initialize
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSample_PeriodTask
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_FeedBackBusOutput
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_AppMainInputUpdate
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[bb]"></a>mul_u32_sat</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, appmain.o(i.mul_u32_sat))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = mul_u32_sat &rArr; mul_wide_u32
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mul_wide_u32
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedCurve
+</UL>
+
+<P><STRONG><a name="[e7]"></a>mul_wide_u32</STRONG> (Thumb, 64 bytes, Stack size 20 bytes, appmain.o(i.mul_wide_u32))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = mul_wide_u32
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mul_u32_sat
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[e4]"></a>Main_AppMainInputUpdate</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, main.o(i.Main_AppMainInputUpdate))
+<BR><BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[82]"></a>Main_FeedBackBusOutput</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, main.o(i.Main_FeedBackBusOutput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Main_FeedBackBusOutput
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_PwmOutLow
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_PwmOutHigh
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[d5]"></a>TestMode_FctTest</STRONG> (Thumb, 718 bytes, Stack size 48 bytes, testmode.o(i.TestMode_FctTest))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = TestMode_FctTest &rArr; MotorAPI_MotorSetSpeed &rArr; Emo_StopMotor &rArr; BDRV_Set_Bridge
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_BDRV_Off
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_BDRVGetShortStatus
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FctEmo_calIShuntZero
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_WriteU8
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_StartFrameTransmission
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_ReadU8
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_GetRxID
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_TestMOS
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorSetSpeed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestMode_FactoryTest
+</UL>
+
+<P><STRONG><a name="[ad]"></a>PwmIn_CalulatePulseWidth</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, pwmin.o(i.PwmIn_CalulatePulseWidth))
+<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmIn_PeriodTask
+</UL>
+
+<P><STRONG><a name="[37]"></a>ADCSample_BatVoltageFilter</STRONG> (Thumb, 138 bytes, Stack size 16 bytes, adcsample.o(i.ADCSample_BatVoltageFilter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ADCSample_BatVoltageFilter
+</UL>
+<BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSample_PeriodTask
+</UL>
+
+<P><STRONG><a name="[8b]"></a>MotorAPI_MotorDryRunningMonitor</STRONG> (Thumb, 154 bytes, Stack size 20 bytes, motorapi.o(i.MotorAPI_MotorDryRunningMonitor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = MotorAPI_MotorDryRunningMonitor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorPeriodTask
+</UL>
+
+<P><STRONG><a name="[86]"></a>MotorAPI_MotorOnShortMonitor</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, motorapi.o(i.MotorAPI_MotorOnShortMonitor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MotorAPI_MotorOnShortMonitor
+</UL>
+<BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_BDRVGetShortStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorPeriodTask
+</UL>
+
+<P><STRONG><a name="[8a]"></a>MotorAPI_MotorSpeedMonitor</STRONG> (Thumb, 362 bytes, Stack size 36 bytes, motorapi.o(i.MotorAPI_MotorSpeedMonitor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = MotorAPI_MotorSpeedMonitor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorPeriodTask
+</UL>
+
+<P><STRONG><a name="[89]"></a>MotorAPI_OverCurrentMonitor</STRONG> (Thumb, 64 bytes, Stack size 0 bytes, motorapi.o(i.MotorAPI_OverCurrentMonitor))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorAPI_MotorPeriodTask
+</UL>
+
+<P><STRONG><a name="[ba]"></a>SDK_NVM_ECC_Check</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, sdk.o(i.SDK_NVM_ECC_Check))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SDK_NVM_ECC_Check
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_Mem_Check
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_clrDFlashError
+</UL>
+
+<P><STRONG><a name="[b7]"></a>SDK_PMU_VDDEXT_ForceOn</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, sdk.o(i.SDK_PMU_VDDEXT_ForceOn))
+<BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_HardwareInit
+</UL>
+
+<P><STRONG><a name="[b9]"></a>SDK_RAM_Check</STRONG> (Thumb, 110 bytes, Stack size 32 bytes, sdk.o(i.SDK_RAM_Check))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SDK_RAM_Check
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WDT1_Service
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDK_Mem_Check
+</UL>
+
+<P><STRONG><a name="[50]"></a>DTCPowerCntUpdate</STRONG> (Thumb, 66 bytes, Stack size 12 bytes, dtc.o(i.DTCPowerCntUpdate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = DTCPowerCntUpdate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_Init
+</UL>
+
+<P><STRONG><a name="[51]"></a>DTCVarReset</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, dtc.o(i.DTCVarReset))
+<BR><BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_PeriodTask
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_Init
+</UL>
+
+<P><STRONG><a name="[56]"></a>DTC_CaculateCheckSum</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, dtc.o(i.DTC_CaculateCheckSum))
+<BR><BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_PeriodTask
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_isDtcDataValid
+</UL>
+
+<P><STRONG><a name="[53]"></a>DTC_UpdateFaultRePowerInfo</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, dtc.o(i.DTC_UpdateFaultRePowerInfo))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DTC_UpdateFaultRePowerInfo
+</UL>
+<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_PeriodTask
+</UL>
+
+<P><STRONG><a name="[54]"></a>DTC_UpdateFaultTotalCnt</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, dtc.o(i.DTC_UpdateFaultTotalCnt))
+<BR><BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_PeriodTask
+</UL>
+
+<P><STRONG><a name="[4f]"></a>DTC_isDtcDataValid</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, dtc.o(i.DTC_isDtcDataValid))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DTC_isDtcDataValid
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_CaculateCheckSum
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DTC_Init
+</UL>
+
+<P><STRONG><a name="[78]"></a>FanComTest_UartErrHandle</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, fancomtest.o(i.FanComTest_UartErrHandle))
+<BR><BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FanComTest_RxHandler
+</UL>
+
+<P><STRONG><a name="[5f]"></a>Mat_ExeLp_without_min_max</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, emo.o(i.Mat_ExeLp_without_min_max))
+<BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_CaculateIShunt
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_MLowTask
+</UL>
+
+<P><STRONG><a name="[64]"></a>Mat_Ramp</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, emo.o(i.Mat_Ramp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Mat_Ramp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_MLowTask
+</UL>
+
+<P><STRONG><a name="[69]"></a>Emo_RAM_T2C</STRONG> (Thumb, 348 bytes, Stack size 36 bytes, emo_ram.o(i.Emo_RAM_T2C))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = Emo_RAM_T2C
+</UL>
+<BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Emo_RAM_MHighTask
+</UL>
+
+<P><STRONG><a name="[e3]"></a>UpdateStateCnt_ofed</STRONG> (Thumb, 74 bytes, Stack size 20 bytes, ecufaultdiag.o(i.UpdateStateCnt_ofed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = UpdateStateCnt_ofed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VoltageDiag
+</UL>
+
+<P><STRONG><a name="[39]"></a>UpdateStateCnt</STRONG> (Thumb, 74 bytes, Stack size 20 bytes, rt_sys_ecufaultdiag_0.o(i.UpdateStateCnt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = UpdateStateCnt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AmbTOverDiag
+</UL>
+
+<P><STRONG><a name="[6]"></a>SVC_Handler</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, startup_tle987x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_tle987x.o(RESET)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

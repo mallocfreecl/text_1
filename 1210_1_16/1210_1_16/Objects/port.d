@@ -1,0 +1,14 @@
+.\objects\port.o: RTE\Device\TLE9871QXA20\port.c
+.\objects\port.o: RTE\Device\TLE9871QXA20\port.h
+.\objects\port.o: RTE\Device\TLE9871QXA20\tle987x.h
+.\objects\port.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
+.\objects\port.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\port.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\port.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\port.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\port.o: RTE\Device\TLE9871QXA20\system_tle987x.h
+.\objects\port.o: RTE\Device\TLE9871QXA20\types.h
+.\objects\port.o: RTE\Device\TLE9871QXA20\cmsis_misra.h
+.\objects\port.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
+.\objects\port.o: RTE\Device\TLE9871QXA20\sfr_access.h
+.\objects\port.o: RTE\Device\TLE9871QXA20\port_defines.h

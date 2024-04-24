@@ -1,0 +1,14 @@
+.\objects\mon.o: RTE\Device\TLE9871QXA20\mon.c
+.\objects\mon.o: RTE\Device\TLE9871QXA20\mon.h
+.\objects\mon.o: RTE\Device\TLE9871QXA20\tle987x.h
+.\objects\mon.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
+.\objects\mon.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mon.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\mon.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\mon.o: D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\mon.o: RTE\Device\TLE9871QXA20\system_tle987x.h
+.\objects\mon.o: RTE\Device\TLE9871QXA20\types.h
+.\objects\mon.o: RTE\Device\TLE9871QXA20\sfr_access.h
+.\objects\mon.o: RTE\Device\TLE9871QXA20\wdt1.h
+.\objects\mon.o: RTE\Device\TLE9871QXA20\mon_defines.h
+.\objects\mon.o: .\RTE\_TLE9879_EvalKit\RTE_Components.h

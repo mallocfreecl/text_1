@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifxmlcfg version="2.0.2">
+	<checksum>b0f2e60543cf8d488491d121bd4ae1495fc530fa6c1323560d885817a91a37fd</checksum>
+	<!--file ICW_TLE987x.xml                                                           -->
+	<!--brief TLE987x ePower Configuration                                              -->
+	<!--                                                                                -->
+	<!--You can use this file under the terms of the IFX License.                       -->
+	<!--                                                                                -->
+	<!--This file is distributed in the hope that it will be useful, but WITHOUT ANY    -->
+	<!--WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR   -->
+	<!--A PARTICULAR PURPOSE. See the IFX License for more details (IFX_License.txt).   -->
+	<!--                                                                                -->
+	<!--This file may be used, copied, and distributed, with or without modification,   -->
+	<!--provided that all copyright notices are retained; that all modifications to     -->
+	<!--this file are prominently noted in the modified file; and that this paragraph   -->
+	<!--is not modified.                                                                -->
+	<!--                                                                                -->
+	<!--copyright Copyright (C) 2017 Infineon Technologies AG                           -->
+	<!--                                                                                -->
+	<!--********************************************************************************-->
+	<!--                        Author(s) Identity                                      -->
+	<!--********************************************************************************-->
+	<!-- Initials     Name                                                              -->
+	<!-- DM           Daniel Mysliwitz                                                  -->
+	<!-- CE           Christian Engel                                                   -->
+	<!--********************************************************************************-->
+	<!--                                                                                -->
+	<!--********************************************************************************-->
+	<!--                       Revision Control History                                 -->
+	<!--********************************************************************************-->
+	<!--   V1.0.0: 2014-05-04, DM:   Initial version                                    -->
+	<!--   V1.0.1: 2014-11-20, DM:   reorganize the FOC current settings                -->
+	<!--   V1.0.2: 2015-02-15, DM:   XML version reised to V0.3                         -->
+	<!--   V1.0.3: 2015-07-14, DM:   Rotor alignment pulled out of FOC-Start-up         -->
+	<!--   V1.0.4: 2016-06-22, DM:   FOC-Start-up removed, for FOC SW V3.86             -->
+	<!--   V1.0.5: 2016-07-08, DM:   FluxEstimator time constant added                  -->
+	<!--   V2.0.6: 2018-11-09, CE:   File rewritten for Config Wizard version 2 and     -->
+	<!--   V2.0.7: 2019-01-04, DM:   ICW_TLE987x.xml included                           -->
+	<!--   V2.0.8: 2019-11-18, DM:   for current values spinboxes replaced by           -->
+    <!--                             doublespinboxes to enter correct negative values   -->
+	<!--********************************************************************************-->
+	<version label="V2.0.8"/>
+	<svd file="TLE987x.svd"/>
+	<migration file="TLE987x.mig"/>
+	<tabcontainer label="TLE987x Peripherals">
+		<treecontainer headerlabels="Structure;Settings;" label="FOC Motor Parameter" desc="Motor Algorithm Parameter" columnwidths="450;250">
+			<header file="foc_defines.h">
+				<checkbox label="FOC Config" define="FOC.En" svd="0" uielement="branch">
+					<branch label="General Parameters">
+						<doublespinbox label="Shunt Resistance" suffix=" Ohm" define="FOC.R_SHUNT" svd="0" default="0.005"/>
+						<doublespinbox label="Nominal Current" suffix=" A" define="FOC.NOM_CUR" svd="0" default="15"/>
+						<combo label="PWM Frequency" define="FOC.PWM_FREQ" svd="0" default="label=20 kHz">
+							<item label="10 kHz" value="10000" lockon="CCU6.T12_FREQ=10000;CCU6.T12_PERIOD_SEL=2"/>
+							<item label="15 kHz" value="15000" lockon="CCU6.T12_FREQ=15000;CCU6.T12_PERIOD_SEL=2"/>
+							<item label="20 kHz" value="20000" lockon="CCU6.T12_FREQ=20000;CCU6.T12_PERIOD_SEL=2"/>
+							<item label="25 kHz" value="25000" lockon="CCU6.T12_FREQ=25000;CCU6.T12_PERIOD_SEL=2"/>
+						</combo>
+						<math label="PWM Period" unit=" us" define="FOC.PWM_PERIOD" svd="0" formula="1e6/FOC.PWM_FREQ"/>
+					</branch>
+					<branch label="Motor Parameters">
+						<doublespinbox label="Phase Resistance" suffix=" Ohm" define="FOC.R_PHASE" svd="0" default="0.02"/>
+						<doublespinbox label="Phase Inductance" suffix=" H" define="FOC.L_PHASE" svd="0" default="15"/>
+						<spinbox label="Pole Pairs" define="FOC.POLE_PAIRS[7:0]" svd="0" default="1"/>
+						<spinbox label="Max. Speed" suffix=" rpm" define="FOC.MAX_SPEED" svd="0" default="1"/>
+					</branch>
+					<branch label="Speed/Current Controller Settings">
+						<branch label="Current Controller Parameters">
+							<doublespinbox label="Current Controller Amplification" define="FOC.CUR_ADJUST" svd="0" range="0.01;1.0" default="0.01"/>
+							<doublespinbox label="Timer constant for Flux Estimator" define="FOC.FLUX_ADJUST" svd="0" range="0.01;1.0" default="0.02"/>
+						</branch>
+						<branch label="Speed Controller Parameters">
+							<spinbox label="Kp" define="FOC.SPEED_KP" svd="0" range="1;32767" default="1000"/>
+							<spinbox label="Ki" define="FOC.SPEED_KI" svd="0" range="1;32767" default="15"/>
+							<doublespinbox label="Speed Filter Time" suffix=" s" define="FOC.SPEED_FILT_TIME" svd="0" range="0.01;1.0" default="0.01"/>
+						</branch>
+					</branch>
+					<branch label="Start and Runtime Settings">
+						<branch label="Open-Loop">
+							<branch label="Acceleration ramp">
+								<spinbox label="Switch-on Speed" suffix=" rpm" define="FOC.SWITCH_ON_SPEED" svd="0" default="1"/>
+								<spinbox label="End Start-up Speed" suffix=" rpm" define="FOC.END_START_SPEED" svd="0" default="1"/>
+								<doublespinbox label="Start-up Acceleration" suffix=" rpm/s" define="FOC.START_ACCEL" svd="0" default="1"/>
+							</branch>
+							<spinbox label="I/F initial Start Current" suffix=" A" define="FOC.START_CUR_IF" svd="0" default="1"/>
+							<checkbox label="Rotor alignment" define="FOC.START_FREQ_ZERO" svd="0" default="1" uielement="branch">
+								<doublespinbox label="Time" suffix=" s" define="FOC.ZERO_VEC_TIME" svd="0" default="0.01"/>
+							</checkbox>
+							<math visible="false" define="FOC.START_CUR" svd="0" formula="FOC.START_CUR_IF"/>
+						</branch>
+						<branch label="Closed-Loop">
+							<branch label="FOC Current Setting - positive rotation direction">
+								<doublespinbox label="FOC current for lower speeds" suffix=" A" define="FOC.MIN_POS_REF_CUR" svd="0" default="1"/>
+								<doublespinbox label="Switch-over Speed" suffix=" rpm" define="FOC.MAX_CUR_SPEED" svd="0" default="1"/>
+								<doublespinbox label="FOC current for higher speeds" suffix=" A" define="FOC.MAX_POS_REF_CUR" svd="0" default="1"/>
+							</branch>
+							<branch label="FOC Current Setting - negative rotation direction">
+								<doublespinbox label="FOC current for lower speeds" suffix=" A" define="FOC.MIN_NEG_REF_CUR" svd="0" default="1"/>
+								<doublespinbox label="Switch-over Speed" suffix=" rpm" define="FOC.MIN_CUR_SPEED" svd="0" default="1"/>
+								<doublespinbox label="FOC current for higher speeds" suffix=" A" define="FOC.MAX_NEG_REF_CUR" svd="0" default="1"/>
+							</branch>
+						</branch>
+					</branch>
+				</checkbox>
+			</header>
+		</treecontainer>
+		<include>./ICW_TLE987x.xml</include>
+	</tabcontainer>
+</ifxmlcfg>
