@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<JScopeProject>
+    <FileVersion major="1" minor="1" />
+    <Project>
+        <Configuration>
+            <JLink>
+                <Options Connection="4" IsRTTSession="0" IsRTTWithTimeStamp="1" SamplingPeriod="100" SerialNo="0" JTAG_IRPre="-1" JTAG_DRPre="-1" IP="" TargetDevice="unspecified" TargetInterface="SWD" InterfaceSpeed="4000" />
+            </JLink>
+            <ScriptFile Name="C:\Users\xbdz\Desktop\1020.1(9871BF)\1020.5\Objects\1.jscope\unspecified" />
+            <ElfFile Name="C:\Users\xbdz\Desktop\1020.1(9871BF)\1020.5\Objects\Mc.axf" />
+            <DataFile Name="" />
+            <RawFile Name="..\t3674_230513_02.jraw" />
+            <Scope>
+                <Options TimeResolutionUs="1000000" />
+            </Scope>
+        </Configuration>
+        <Windows>
+            <Graph Show="1" />
+            <Watch Show="1" />
+        </Windows>
+        <SelectedSymbols>
+            <Symbol>
+                <Options Name="EMFAmp" Address="0x180003B2" Type="ushort" TypeID="7" Size="2" GraphColorRed="255" GraphColorGreen="215" GraphColorBlue="0" YMinSampled="0" YMaxSampled="1664" YAvgSampled="108" Offset="4" ShowInGraph="1" ACCoupling="0" YOffset="200" IsAutoConfig="0" YResolution="100" MaxValue="10000" File="Mc\McLib.c" Scope="1" DrawStyle="0" />
+            </Symbol>
+            <Symbol>
+                <Options Name="BemfAmpFlt" Address="0x18000176" Type="ushort" TypeID="7" Size="2" GraphColorRed="0" GraphColorGreen="255" GraphColorBlue="0" YMinSampled="0" YMaxSampled="1587" YAvgSampled="86" Offset="6" ShowInGraph="1" ACCoupling="0" YOffset="200" IsAutoConfig="0" YResolution="100" MaxValue="2000" File="Mc\McLib.c" Scope="0" DrawStyle="0" />
+            </Symbol>
+            <Symbol>
+                <Options Name="Speed" Address="0x180003CC" Type="short" TypeID="11" Size="2" GraphColorRed="102" GraphColorGreen="102" GraphColorBlue="178" YMinSampled="-694" YMaxSampled="0" YAvgSampled="-34" Offset="8" ShowInGraph="1" ACCoupling="0" YOffset="500" IsAutoConfig="0" YResolution="50" MaxValue="1000" File="Mc\McLib.c" Scope="0" DrawStyle="0" />
+            </Symbol>
+            <Symbol>
+                <Options Name="ActSpeed" Address="0x180002CA" Type="short" TypeID="11" Size="2" GraphColorRed="160" GraphColorGreen="32" GraphColorBlue="240" YMinSampled="-923" YMaxSampled="0" YAvgSampled="-21" Offset="10" ShowInGraph="1" ACCoupling="0" YOffset="500" IsAutoConfig="1" YResolution="500" MaxValue="1000" File="Mc\Mc.c" Scope="0" DrawStyle="0" />
+            </Symbol>
+        </SelectedSymbols>
+    </Project>
+</JScopeProject>

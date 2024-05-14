@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"adcsample.h": "c",
+			"Sdk.h": "c",
+			"common.h": "c",
+			"GlobalVars.h": "c",
+			"FanComTest.h": "c",
+			"UartDebug.h": "c",
+			"motorapi.h": "c",
+			"emo_ram.h": "c",
+			"sdktypes.h": "c",
+			"mcwm.h": "c",
+			"mat.h": "c"
+		}
+	}
+}

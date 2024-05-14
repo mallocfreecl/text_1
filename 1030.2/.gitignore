@@ -1,0 +1,11 @@
+*.[_pmtBbdole]*
+*.crf
+*.htm
+*.sct
+*.rsp
+**/slprj
+**/html
+**/tmwinternal
+!*.lib
+!*.map
+!*.m
